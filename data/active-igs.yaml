@@ -89,5 +89,5 @@ activeIGs:
     description:
   - repo: hl7-be/childreport
     package: hl7.fhir.be.childreport
-    owner:
+    owner: patient-dossier-wg
     description:
