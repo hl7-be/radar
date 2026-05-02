@@ -1,0 +1,83 @@
+# Workgroups — governance artifact.
+#
+# Each group owns one or more IGs (linked via `owner: <group-id>` in
+# active-igs.yaml). The Groups view shows per-group health, including:
+#   - Number of active IGs owned
+#   - Aggregate state of those IGs (released / WIP / stale)
+#   - Last meeting (if known)
+#   - Active branches that need attention
+#
+# Workflow when adding a new group:
+#   1. Append a new entry below with a unique `id`.
+#   2. Reference that id from one or more entries in active-igs.yaml as `owner`.
+#
+# Fields per entry:
+#   id              required — short slug (e.g. "core-wg")
+#   name            required — display name (e.g. "Core WG")
+#   description     optional — purpose / scope
+#   chair           optional — person who chairs the group
+#   members         optional — list of contributor names / handles
+#   meetingCadence  optional — e.g. "biweekly", "monthly"
+#   lastMeeting     optional — ISO date of the most recent meeting
+#   nextMeeting     optional — ISO date of the next planned meeting
+#   slack           optional — Slack/Teams channel
+#   notes           optional — free-form
+
+groups:
+  - id: core-wg
+    name: Core WG
+    description: Foundational profiles and the transversal clinical core.
+    chair:
+    meetingCadence: biweekly
+    lastMeeting:
+    nextMeeting:
+
+  - id: terminology-wg
+    name: Terminology WG
+    description: Belgian FHIR code systems, value sets, naming systems.
+    chair:
+    meetingCadence: biweekly
+    lastMeeting:
+    nextMeeting:
+
+  - id: medication-wg
+    name: Medication WG
+    description: Prescription, dispense, medication line.
+    chair:
+    meetingCadence:
+    lastMeeting:
+
+  - id: patient-monitoring-wg
+    name: Patient Monitoring WG
+    description: Remote patient monitoring profiles.
+    chair:
+    meetingCadence:
+    lastMeeting:
+
+  - id: patient-dossier-wg
+    name: Patient Dossier WG
+    description: Patient dossier IGs — lab, allergy, patient-dossier and related.
+    chair:
+    meetingCadence:
+    lastMeeting:
+
+  - id: pss-wg
+    name: PSS WG
+    description: Prescription Search Services.
+    chair:
+    meetingCadence:
+    lastMeeting:
+
+  - id: infsec-wg
+    name: InfSec WG
+    description: Information security profiles (audit, consent, pseudonymization).
+    chair:
+    meetingCadence:
+    lastMeeting:
+
+  - id: referral-wg
+    name: Referral WG
+    description: Digital Referral Prescription (DRP).
+    chair:
+    meetingCadence:
+    lastMeeting:

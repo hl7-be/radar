@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareSet Console</title>
+  <script type="module" crossorigin src="/assets/index-Bgq3lBxy.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DwV7GRoH.css">
+</head>
+<body>
+<div class="app">
+    <nav class="sidebar">
+        <h1>CareSet Console</h1>
+        <div class="context-name" id="contextName">Loading...</div>
+
+        <div class="nav-section">Navigate</div>
+        <button class="nav-item active" data-view="explorer" onclick="switchView('explorer')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            <span>Explorer</span>
+        </button>
+        <button class="nav-item" data-view="pipeline" onclick="switchView('pipeline')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            <span>Pipeline</span>
+        </button>
+        <button class="nav-item" data-view="timeline" onclick="switchView('timeline')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="2" y1="6" x2="22" y2="6"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="18" x2="22" y2="18"/><rect x="6" y="4" width="8" height="4" rx="1" fill="currentColor" opacity="0.3"/><rect x="10" y="10" width="10" height="4" rx="1" fill="currentColor" opacity="0.3"/><rect x="4" y="16" width="6" height="4" rx="1" fill="currentColor" opacity="0.3"/></svg>
+            <span>Timeline</span>
+        </button>
+        <button class="nav-item" data-view="gaps" onclick="switchView('gaps')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <span>Gaps</span>
+        </button>
+        <button class="nav-item" data-view="health" onclick="switchView('health')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            <span>Health</span>
+        </button>
+        <button class="nav-item" data-view="groups" onclick="switchView('groups')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            <span>Groups</span>
+        </button>
+        <button class="nav-item" data-view="branches" onclick="switchView('branches')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="3" r="3"/><circle cx="6" cy="21" r="3"/><circle cx="18" cy="6" r="3"/><path d="M9 6h7a3 3 0 013 3v0a3 3 0 01-3 3H6"/><path d="M6 6v15"/></svg>
+            <span>Branches</span>
+        </button>
+
+        <div class="nav-section">Tools</div>
+        <button class="nav-item" data-view="selector" onclick="switchView('selector')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Download</span>
+        </button>
+        <button class="nav-item" data-view="reports" onclick="switchView('reports')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            <span>Reports</span>
+        </button>
+        <button class="nav-item" data-view="refsets" onclick="switchView('refsets')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+            <span>Refsets</span>
+        </button>
+        <button class="nav-item" data-view="crawl" onclick="switchView('crawl')" style="position:relative">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"/></svg>
+            <span>Crawl</span>
+            <span id="crawlStaleIndicator" style="display:none;position:absolute;top:6px;right:10px;width:8px;height:8px;border-radius:50%;background:var(--danger)"></span>
+        </button>
+        <button class="nav-item" data-view="report" onclick="switchView('report')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            <span>Progress</span>
+        </button>
+    </nav>
+
+    <div class="main">
+        <div class="topbar">
+            <h2 id="viewTitle">Explorer</h2>
+            <div id="topbarActions"></div>
+        </div>
+        <div class="content" id="viewContent">
+            <div style="text-align:center;padding:3rem;color:var(--gray-400)">Loading...</div>
+        </div>
+    </div>
+</div>
+
+<div class="gantt-tooltip" id="ganttTooltip"></div>
+</body>
+</html>

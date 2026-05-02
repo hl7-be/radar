@@ -1,0 +1,110 @@
+# Quality & monitoring controls.
+#
+# This file is the *control panel* — edit these entries to tune how each
+# check behaves. The actual logic lives in public/tracker.js (registerControl
+# calls with matching `id`). If a control id here has no matching JS check
+# function, the control shows as "not implemented" in the UI.
+#
+# Each entry supports:
+#   id          required — matches the JS check function by id
+#   name        short display name
+#   description one-line explanation shown in the UI
+#   category    grouping bucket ('Terminology', 'Governance', 'Modelling', …)
+#   severity    info | warn | error (styles the severity badge)
+#   enabled     true/false — disabled controls are hidden from the UI
+#   link        optional navigation target — clicking the control row jumps
+#               to the named view. Supported shapes:
+#                 reports/valuesets | reports/codesystems | reports/namingsystems
+#                 reports/profiles  | reports/type/<type> | reports/package/<pkg>
+#                 reports/layer/<L2|T|L3>
+#                 explorer/packages | explorer/artifacts | pipeline | timeline
+#   params      free-form map passed into check(data, params); lets you tune
+#               thresholds or filters without editing JS
+
+controls:
+
+  - id: vs-empty
+    name: Empty CodeSystems and ValueSets
+    description: Terminology resources with no concepts or composition entries.
+    category: Terminology
+    severity: error
+    enabled: true
+    link: reports/layer/T
+    params: {}
+
+  - id: vs-inactive-concepts
+    name: ValueSets with inactive concepts
+    description: Value sets that reference concepts marked inactive in their code system.
+    category: Terminology
+    severity: warn
+    enabled: true
+    link: reports/valuesets
+    params: {}
+
+  - id: vs-missing-translations
+    name: ValueSets missing translations
+    description: Value sets whose designations lack one of the expected display languages.
+    category: Terminology
+    severity: warn
+    enabled: true
+    link: reports/valuesets
+    params:
+      expectedLanguages: [nl, fr, en]
+
+  - id: ig-without-approved-project
+    name: IGs without an approved project
+    description: Published or in-progress IGs whose governing project has no approved proposal on record.
+    category: Governance
+    severity: error
+    enabled: true
+    link: explorer/packages
+    params: {}
+
+  - id: profile-without-logical-model
+    name: Profiles without a corresponding logical model
+    description: Technical profiles that lack a matching L2 logical data model in the same package or careset.
+    category: Modelling
+    severity: warn
+    enabled: true
+    link: reports/profiles
+    params: {}
+
+  - id: ci-build-ok
+    name: CI master build is OK
+    description: Each IG's CI (master / main) build completes without errors — checked against the qa.json produced by the IG Publisher.
+    category: Build
+    severity: error
+    enabled: true
+    link: explorer/packages
+    params:
+      maxErrors: 0        # fail when qa.json.errs exceeds this threshold
+
+  - id: ci-has-qa-json
+    name: CI Build URL publishes a qa.json
+    description: Every IG's ci-build URL serves a qa.json, which is required for automated quality monitoring.
+    category: Build
+    severity: warn
+    enabled: true
+    link: explorer/packages
+    params: {}
+
+  - id: doc-sent-to-wgse
+    name: Business document sent to WGSE
+    description: The business document (driving the Functional layer) should be sent to the official stakeholders (WGSE) once approved. Flags deliveries where the document is approved but not yet sent.
+    category: Governance
+    severity: warn
+    enabled: true
+    link: reports/layer/L2
+    params:
+      requireForStatuses: [approved, published]
+
+  - id: long-standing-branches
+    name: Long-standing branches
+    description: Branches on each IG repo that have not merged into main within the threshold, signalling stalled work or divergence risk.
+    category: Build
+    severity: warn
+    enabled: true
+    link: explorer/packages
+    params:
+      maxAgeDays: 90
+      ignoreBranches: [main, master, gh-pages]

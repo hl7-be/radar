@@ -1,0 +1,27 @@
+# Feature toggles for the deployed (online) build.
+#
+# Edit this file and re-run `npm run build:deploy` to publish a different
+# slice — or `git restore` to revert to dev defaults. Anything missing here
+# is treated as `false`.
+#
+# Reports / Refsets without Crawl: those views read data from a static crawl
+# snapshot at /data/crawl-snapshot.json. To refresh it:
+#   1. `npm run dev`, open the app, switch to Crawl, hit "Start Crawl"
+#   2. In DevTools console, call `exportCrawlSnapshot()` → downloads JSON
+#   3. Save that file as public/data/crawl-snapshot.json
+#   4. `npm run build:deploy`
+# Loader fallback lives in src/main.js (restoreCrawlData).
+
+features:
+  explorer: false
+  pipeline: false
+  timeline: false
+  gaps: false
+  health: false
+  groups: true       # ← visible
+  selector: false
+  reports: true
+  refsets: true
+  crawl: false
+  report: false
+  branches: true     # ← visible

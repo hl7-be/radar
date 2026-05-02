@@ -1,0 +1,4389 @@
+context:
+  id: be
+  name: HL7 Belgium
+  shortName: BE
+  baseUrl: https://ehealth.fgov.be/standards/fhir
+  githubOrg: hl7-be
+projects:
+  - id: be-core
+    name: Belgian Core Profiles
+    description: "Core profiles: Patient, Practitioner, Organization"
+    transversal: true
+    status: published
+    repository: hl7-be/core
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/core
+    acceptance:
+      date: "2021-06-15"
+      link: https://example.com/minutes/2021-06-15
+      notes: Accepted by WG vote
+    packages:
+      - hl7.fhir.be.core
+    artifacts:
+      - id: be-cs-care-location
+        name: BeCSCareLocation
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: cd-fed-country
+        name: Cdfedcountry
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: cd-civilstate
+        name: CivilState
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: cd-contact-person
+        name: ContactPerson
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: cd-hcparty
+        name: HCParty
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: be-ext-codeableconcept
+        name: BeExtCodeableConcept
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: be-ext-codeable-reference
+        name: BeExtCodeableReference
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: be-ext-gender-at-birth
+        name: BeExtGenderAtBirth
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: be-ext-recorder
+        name: BeExtRecorder
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: be-ext-simple-note
+        name: BeExtSimpleNote
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: BeModelPatient
+        name: BeModelPatient
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: BeModelPatientDocument
+        name: BeModelPatientDocument
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: be-cbe
+        name: BeCBENamingSystem
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: be-ehp
+        name: BeEhealthPartnerIDNamingSystem
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: be-insurancenumber
+        name: BeInsuranceNumberNamingSystem
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: be-insurancymembership
+        name: BeInsurancymembershipNamingSystem
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: be-nihdi
+        name: BeNIHDINamingSystem
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: be-ns-nihdi-nomenclature
+        name: BeNSNihdiNomenclature
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: be-ns-nihdi-organization
+        name: BeNSNIHDIOrganization
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: be-ns-nihdi-professional
+        name: BeNSNIHDIProfessional
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: be-ssin
+        name: BeSSINNamingSystem
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: be-address
+        name: BeAddress
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.core
+        fhirBase: Address
+        status: published
+      - id: be-coded-annotation
+        name: BeCodedAnnotation
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.core
+        fhirBase: Annotation
+        status: published
+      - id: be-communication
+        name: BeCommunication
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.core
+        fhirBase: Communication
+        status: published
+      - id: be-documentreference
+        name: BeDocumentReference
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.core
+        fhirBase: DocumentReference
+        status: published
+      - id: be-organization
+        name: BeOrganization
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.core
+        fhirBase: Organization
+        status: published
+      - id: be-patient
+        name: BePatient
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.core
+        fhirBase: Patient
+        status: published
+      - id: be-practitioner
+        name: BePractitioner
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.core
+        fhirBase: Practitioner
+        status: published
+      - id: be-practitionerrole
+        name: BePractitionerRole
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.core
+        fhirBase: PractitionerRole
+        status: published
+      - id: be-provenance
+        name: BeProvenance
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.core
+        fhirBase: Provenance
+        status: published
+      - id: be-civilstate
+        name: BeCivilstate
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: be-contactperson
+        name: BeContactPerson
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: be-vs-care-location
+        name: BeVSCareLocation
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: be-vs-cd-hcparty
+        name: BeVSCdHcParty
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: be-vs-gender-at-birth
+        name: BeVSGenderAtBirth
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+      - id: be-vs-patient-relationship-type
+        name: BeVSPatientRelationshipType
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.core
+        fhirBase: null
+        status: published
+    proposals:
+      - title: Belgian Core Profiles Project Proposal
+        version: "1.0"
+        date: "2020-03-10"
+        status: approved
+        file: docs/proposals/core-proposal-v1.0.docx
+  - id: be-medication
+    name: Medication
+    description: Medication profiles for prescription, dispense and administration
+    transversal: false
+    status: published
+    repository: hl7-be/medication
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/medication
+    acceptance:
+      date: "2021-03-10"
+      link: https://example.com/minutes/2021-03-10
+    dependencies:
+      - be-core
+    packages:
+      - hl7.fhir.be.medication
+    artifacts:
+      - id: BeMedicationLineAdherenceStatus
+        name: BeMedicationLineAdherenceStatus
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeMedicationLineAdherenceStatusReason
+        name: BeMedicationLineAdherenceStatusReason
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeMedicationLineOriginType
+        name: BeMedicationLineOriginType
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeMedicationLineRegistrationStatus
+        name: BeMedicationLineRegistrationStatus
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeMedicationRequestReimbursementType
+        name: BeMedicationRequestReimbursementType
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeMedicationType
+        name: BeMedicationType
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BasedOnMedicationLine
+        name: BasedOnMedicationLine
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeExtAdherenceStatus
+        name: BeExtAdherenceStatus
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeExtInstructionsForReimbursement
+        name: BeExtInstructionsForReimbursement
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeExtMedicationLineRegistrationStatus
+        name: BeExtMedicationLineRegistrationStatus
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeExtMedicationType
+        name: BeExtMedicationType
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeExtOffLabel
+        name: BeExtOffLabel
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeExtRecordedDate
+        name: BeExtRecordedDate
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeExtRecorder
+        name: BeExtRecorder
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeMedicationExposureCategory
+        name: BeMedicationExposureCategory
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeModelDosagingInformation
+        name: BeModelDosagingInformation
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeModelMedication
+        name: BeModelMedication
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeModelMedicationDispense
+        name: BeModelMedicationDispense
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeModelMedicationPrescription
+        name: BeModelMedicationPrescription
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeModelMedicationLine
+        name: MedicationLine
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: be-ns-cnk-codes
+        name: BeNSCNK
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: be-ns-cti-extended-code
+        name: BeNSCTIExtended
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: be-ns-prescription-ids
+        name: BeNSPrescriptions
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: be-ns-product-package-type
+        name: BeNSProductPackage
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeDosage
+        name: BeDosage
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.medication
+        fhirBase: Dosage
+        status: published
+      - id: BeMedicationDispense
+        name: BeMedicationDispense
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.medication
+        fhirBase: MedicationDispense
+        status: published
+      - id: BeMedicationLine
+        name: BeMedicationLine
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.medication
+        fhirBase: MedicationStatement
+        status: published
+      - id: BeMedicationPrescription
+        name: BeMedicationPrescription
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.medication
+        fhirBase: MedicationRequest
+        status: published
+      - id: BeMedicationExposureIntentVS
+        name: BeMedicationExposureIntentVS
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeMedicationLineAdherenceStatusReasonVS
+        name: BeMedicationLineAdherenceStatusReasonVS
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeMedicationLineAdherenceStatusVS
+        name: BeMedicationLineAdherenceStatusVS
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeMedicationLineOriginTypeVS
+        name: BeMedicationLineOriginTypeVS
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeMedicationLineRegistrationStatusVS
+        name: BeMedicationLineRegistrationStatusVS
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeMedicationPrescriptionStatusVS
+        name: BeMedicationPrescriptionStatusVS
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeMedicationRequestReimbursementTypeVS
+        name: BeMedicationRequestReimbursementTypeVS
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeMedicationTypeVS
+        name: BeMedicationTypeVS
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: BeRouteOfAdministrationVS
+        name: BeRouteOfAdministrationVS
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+      - id: be-vs-dispenser-types
+        name: DispenserTypes
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.medication
+        fhirBase: null
+        status: published
+    proposals: []
+  - id: be-core-clinical
+    name: Core Clinical Profiles
+    description: "Transversal clinical profiles: problems, procedures, observations"
+    transversal: true
+    status: published
+    repository: hl7-be/core-clinical
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/core-clinical
+    dependencies:
+      - be-core
+    packages:
+      - hl7.fhir.be.core-clinical
+    artifacts:
+      - id: be-cs-bodysite
+        name: BeCSBodySite
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.core-clinical
+        fhirBase: null
+        status: published
+      - id: be-cs-problem-category
+        name: BeCSProblemCategory
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.core-clinical
+        fhirBase: null
+        status: published
+      - id: be-cs-problem-origin-type
+        name: BeCSProblemOriginType
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.core-clinical
+        fhirBase: null
+        status: published
+      - id: be-cs-score
+        name: BeCSScore
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.core-clinical
+        fhirBase: null
+        status: published
+      - id: be-cs-score-category
+        name: BeCSScoreCategory
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.core-clinical
+        fhirBase: null
+        status: published
+      - id: be-ext-body-topography
+        name: BeExtBodyTopography
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.core-clinical
+        fhirBase: null
+        status: published
+      - id: be-ext-laterality
+        name: BeExtLaterality
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.core-clinical
+        fhirBase: null
+        status: published
+      - id: be-ext-problem-origin-type
+        name: BeExtProblemOriginType
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.core-clinical
+        fhirBase: null
+        status: published
+      - id: be-ext-surgical-approach
+        name: BeExtSurgicalApproach
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.core-clinical
+        fhirBase: null
+        status: published
+      - id: BeModelBodySite
+        name: BeModelBodySite
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.core-clinical
+        fhirBase: null
+        status: published
+      - id: BeModelClinicalObservation
+        name: BeModelClinicalObservation
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.core-clinical
+        fhirBase: null
+        status: published
+      - id: BeModelProcedure
+        name: BeModelProcedure
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.core-clinical
+        fhirBase: null
+        status: published
+      - id: be-clinical-observation
+        name: BeClinicalObservation
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.core-clinical
+        fhirBase: Observation
+        status: published
+      - id: be-observation
+        name: BeObservation
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.core-clinical
+        fhirBase: Observation
+        status: published
+      - id: be-observationcodeableconcept
+        name: BeObservationCodeableConcept
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.core-clinical
+        fhirBase: CodeableConcept
+        status: published
+      - id: be-problem
+        name: BeProblem
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.core-clinical
+        fhirBase: Condition
+        status: published
+      - id: be-procedure
+        name: BeProcedure
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.core-clinical
+        fhirBase: Procedure
+        status: published
+      - id: be-scoreresult
+        name: BeScoreResult
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.core-clinical
+        fhirBase: Observation
+        status: published
+      - id: be-vs-bodysite
+        name: BeVSBodySite
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.core-clinical
+        fhirBase: null
+        status: published
+      - id: be-vs-body-topography
+        name: BeVSBodyTopography
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.core-clinical
+        fhirBase: null
+        status: published
+      - id: be-vs-laterality
+        name: BeVSLaterality
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.core-clinical
+        fhirBase: null
+        status: published
+      - id: be-vs-problem-category
+        name: BeVSProblemCategory
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.core-clinical
+        fhirBase: null
+        status: published
+      - id: be-vs-problem-code
+        name: BeVSProblemCode
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.core-clinical
+        fhirBase: null
+        status: published
+      - id: be-vs-problem-origin-type
+        name: BeVSProblemOriginType
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.core-clinical
+        fhirBase: null
+        status: published
+      - id: be-vs-reaction-manifestation-code
+        name: BeVSReactionManifestationCode
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.core-clinical
+        fhirBase: null
+        status: published
+      - id: be-vs-score
+        name: BeVSScore
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.core-clinical
+        fhirBase: null
+        status: published
+      - id: be-vs-scorecategory
+        name: BeVSScoreCategory
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.core-clinical
+        fhirBase: null
+        status: published
+    proposals: []
+  - id: be-terminology
+    name: Terminology
+    description: Belgian FHIR terminology resources
+    transversal: true
+    status: wip
+    repository: hl7-be/terminology
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/terminology
+    proposals: []
+  - id: be-allergy
+    name: Allergy Intolerance
+    description: Allergy and intolerance profiles
+    transversal: false
+    status: published
+    repository: hl7-be/allergy
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/allergy
+    dependencies:
+      - be-core
+    packages:
+      - hl7.fhir.be.allergy
+    artifacts:
+      - id: be-ext-allergy-type
+        name: BeExtAllergyType
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.allergy
+        fhirBase: null
+        status: published
+      - id: be-model-allergyintolerance
+        name: BeModelAllergyIntolerance
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.allergy
+        fhirBase: null
+        status: published
+      - id: be-ns-allergy
+        name: BeNSAllergy
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.allergy
+        fhirBase: null
+        status: published
+      - id: be-allergyintolerance
+        name: BeAllergyIntolerance
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.allergy
+        fhirBase: AllergyIntolerance
+        status: published
+      - id: be-allergyintolerancecode
+        name: BeAllergyIntoleranceCode
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.allergy
+        fhirBase: null
+        status: published
+      - id: be-causativeagent
+        name: BeCausativeAgent
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.allergy
+        fhirBase: null
+        status: published
+      - id: be-exposureroute
+        name: BeExposureRoute
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.allergy
+        fhirBase: null
+        status: published
+      - id: be-noallergy
+        name: BeNoAllergy
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.allergy
+        fhirBase: null
+        status: published
+      - id: be-riskmanifestation
+        name: BeRiskManifestation
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.allergy
+        fhirBase: null
+        status: published
+      - id: be-vs-allergyintolerance-type
+        name: BeVSAllergyIntoleranceType
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.allergy
+        fhirBase: null
+        status: published
+    proposals:
+      - title: Allergy Intolerance Project Proposal
+        version: "2.0"
+        date: "2022-09-01"
+        status: approved
+        file: docs/proposals/allergy-proposal-v2.0.docx
+      - title: Allergy Intolerance Project Proposal
+        version: "1.0"
+        date: "2021-06-15"
+        status: approved
+        file: docs/proposals/allergy-proposal-v1.0.docx
+  - id: be-vaccination
+    name: Vaccination
+    description: Vaccination recording and certificates
+    transversal: false
+    status: published
+    repository: hl7-be/vaccination
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/vaccination
+    dependencies:
+      - be-core
+    packages:
+      - hl7.fhir.be.vaccination
+    artifacts:
+      - id: be-cs-care-location
+        name: BeCSCareLocation
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-cs-vaccination-status-reason
+        name: BeCSStatusReason
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-cs-vaccination-confirmation-status
+        name: BeCSVaccinationConfirmationStatus
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-cs-vaccination-administration-route
+        name: BeCSVaccineAdministrationRoute
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-cs-vaccine-code
+        name: BeCSVaccineCode
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-cs-vaccine-target-disease
+        name: BeCSVaccineTargetDisease
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-ext-administeredProduct
+        name: BeAdministeredProduct
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-ext-simple-note
+        name: BeExtSimpleNote
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-ext-vaccination-confirmationStatus
+        name: BeVaccinationConfirmationStatus
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-ext-vaccination-originalorder
+        name: BeVaccinationOriginalOrder
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-ext-vaccination-stock-funding-organization
+        name: BeVaccinationStockFundingOrganization
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-ext-vaccination-stock-location
+        name: BeVaccinationStockLocation
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-model-vaccination
+        name: BeModelVaccination
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-model-vaccination-reduced
+        name: BeModelVaccinationReduced
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-ns-product-manufacturer
+        name: BeNSManufacturer
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-ns-one-vaccination
+        name: BeNSONEVaccineCode
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-ns-vaccinnet-vaccinecode
+        name: BeNSVaccinetVaccineCode
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-vaccination
+        name: BeVaccination
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.vaccination
+        fhirBase: Immunization
+        status: published
+      - id: be-vs-care-location
+        name: BeVSCareLocation
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-vs-vaccination-bodysite
+        name: BeVSVaccinationBodySite
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-vs-vaccination-confirmation-status
+        name: BeVSVaccinationConfirmationStatus
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-vs-vaccination-product
+        name: BeVSVaccinationProduct
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-vs-vaccination-reason-code
+        name: BeVSVaccinationReasonCode
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-vs-vaccination-status-reason
+        name: BeVSVaccinationStatusReason
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-vs-vaccination-administration-route
+        name: BeVSVaccineAdministrationRoute
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-vs-vaccine-code
+        name: BeVSVaccineCode
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+      - id: be-vs-vaccine-target-disease
+        name: BeVSVaccineTargetDisease
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.vaccination
+        fhirBase: null
+        status: published
+    proposals: []
+  - id: be-mycarenet
+    name: MyCareNet
+    description: FHIR profiles for MyCareNet integration
+    transversal: false
+    status: published
+    repository: hl7-be/mycarenet
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/mycarenet
+    dependencies:
+      - be-core
+    packages:
+      - hl7.fhir.be.mycarenet
+    artifacts:
+      - id: be-cs-holder-code-1
+        name: BeCSHolderCode1
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: be-cs-holder-code-2
+        name: BeCSHolderCode2
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: be-cs-partial-agreement-values
+        name: BeCSPartialAgreementValues
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: agreement-errors
+        name: MyCareNetAgreementErrors
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: agreement-types
+        name: MyCareNetAgreementTypes
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: annex-types
+        name: MyCareNetAnnexTypes
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: decision-values
+        name: MyCareNetDecisionValues
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: message-events
+        name: MyCareNetMessageEvents
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: refusal-values
+        name: MyCareNetRefusalValues
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: waitingforinformation-values
+        name: MyCareNetWaitingForInformationValues
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: nihdi-physiotherapy-pathologysituationcode
+        name: NIHDIPhysiotherapyPathologySituationCode
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: be-ext-mycarenet-item-patientfee
+        name: BeExtItemPatientFee
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: be-ext-mycarenet-item-reimbursement
+        name: BeExtItemReimbursement
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: be-ext-system
+        name: BeExtSystem
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: be-model-eagreement
+        name: BeModelEAgreement
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: be-model-eagreement-response
+        name: BeModelEAgreementResponse
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: be-ns-claim-related-claim
+        name: BeNSClaimRelatedClaim
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: be-mycarenet-coverage
+        name: BeMyCareNetCoverage
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.mycarenet
+        fhirBase: Coverage
+        status: published
+      - id: be-eagreementclaim
+        name: BeMyCareNetEagreementClaim
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.mycarenet
+        fhirBase: Claim
+        status: published
+      - id: be-eagreementclaimresponse
+        name: BeMyCareNetEagreementClaimResponse
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.mycarenet
+        fhirBase: ClaimResponse
+        status: published
+      - id: be-eagreementconsult
+        name: BeMyCareNetEagreementconsult
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.mycarenet
+        fhirBase: Bundle
+        status: published
+      - id: be-eagreementconsultreply
+        name: BeMyCareNetEagreementConsultReply
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.mycarenet
+        fhirBase: Bundle
+        status: published
+      - id: be-eagreementdemand
+        name: BeMyCareNetEAgreementDemand
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.mycarenet
+        fhirBase: Bundle
+        status: published
+      - id: be-eagreementdemandreply
+        name: BeMyCareNetEagreementDemandReply
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.mycarenet
+        fhirBase: Bundle
+        status: published
+      - id: be-eagreementservicerequest
+        name: BeMyCareNetEagreementServiceRequest
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.mycarenet
+        fhirBase: ServiceRequest
+        status: published
+      - id: be-eagreementservicerequest-binary
+        name: BeMyCareNetEagreementServiceRequestBinary
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.mycarenet
+        fhirBase: Binary
+        status: published
+      - id: be-messageheader
+        name: BeMyCareNetMessageHeader
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.mycarenet
+        fhirBase: MessageHeader
+        status: published
+      - id: be-operationoutcome
+        name: BeMyCareNetOperationOutcome
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.mycarenet
+        fhirBase: OperationOutcome
+        status: published
+      - id: be-eagreementclaim-kine
+        name: MyBeMyCareNetEagreementClaimKine
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.mycarenet
+        fhirBase: Claim
+        status: published
+      - id: be-eagreementclaim-logo
+        name: MyBeMyCareNetEagreementClaimLogo
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.mycarenet
+        fhirBase: Claim
+        status: published
+      - id: eagreementadjudicationreason
+        name: BeEAgreementAdjudicationReason
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: eagreementmessage
+        name: BeMessageEAgreement
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: eagreementproductorservice
+        name: BeProductOrServiceNihdiEAgreement
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: be-vs-basic-laterality
+        name: BeVSBasicLaterality
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: be-vs-decision-values
+        name: BeVSDecisionValues
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: be-vs-eagreementerrors
+        name: BeVSEagreementErrors
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: be-vs-holder-code-1
+        name: BeVSHolderCode1
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: be-vs-holder-code-2
+        name: BeVSHolderCode2
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+      - id: be-vs-toothnumber-bodysite
+        name: BeVSToothNumberBodySite
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.mycarenet
+        fhirBase: null
+        status: published
+    proposals: []
+  - id: be-patient-care
+    name: Patient Care
+    description: Care planning and coordination
+    transversal: false
+    status: published
+    repository: hl7-be/patient-care
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/patient-care
+    dependencies:
+      - be-core
+    packages:
+      - hl7.fhir.be.patient-care
+    artifacts:
+      - id: BeModelCarePlan
+        name: BeModelCarePlan
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.patient-care
+        fhirBase: null
+        status: published
+      - id: BeModelCareTeam
+        name: BeModelCareTeam
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.patient-care
+        fhirBase: null
+        status: published
+      - id: BeModelGoal
+        name: BeModelGoal
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.patient-care
+        fhirBase: null
+        status: published
+      - id: BeModelTask
+        name: BeModelTask
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.patient-care
+        fhirBase: null
+        status: published
+      - id: be-care-plan
+        name: BeCarePlan
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.patient-care
+        fhirBase: CarePlan
+        status: published
+      - id: be-careteam
+        name: BeCareTeam
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.patient-care
+        fhirBase: CareTeam
+        status: published
+      - id: be-goal
+        name: BeGoal
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.patient-care
+        fhirBase: Goal
+        status: published
+      - id: be-task
+        name: BeTask
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.patient-care
+        fhirBase: Task
+        status: published
+    proposals: []
+  - id: be-patient-monitoring
+    name: Patient Monitoring
+    description: Remote patient monitoring profiles
+    transversal: false
+    status: wip
+    repository: hl7-be/patient-monitoring
+    dependencies:
+      - be-core
+    proposals: []
+  - id: be-pss
+    name: Prescription Search Support
+    description: Prescription search and retrieval
+    transversal: false
+    status: published
+    repository: hl7-be/pss
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/pss
+    dependencies:
+      - be-core
+      - be-medication
+    packages:
+      - hl7.fhir.be.pss
+    artifacts:
+      - id: PSSaFeedbackReasons
+        name: PSSaFeedbackReasons
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: PSSBundleTags
+        name: PSSBundleTags
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: pss-exception-codes
+        name: PSSExceptionCodes
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: PSSFeedbackCodes
+        name: PSSFeedbackCodes
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: PSSQSIConditions
+        name: PSSQSIConditions
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: PSSQSIProcedures
+        name: PSSQSIProcedures
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: PSSRatingTypes
+        name: PSSRatingTypes
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: PSSrFeedbackReasons
+        name: PSSrFeedbackReasons
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: AnswerOptionAdditionalCode
+        name: AnswerOptionAdditionalCode
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: CodeValueSet
+        name: CodeValueSet
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: PSSRelevantAge
+        name: PSSRelevantAge
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: PSSStructuredRating
+        name: PSSStructuredRating
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: PSSConsentModel
+        name: PSSConsentModel
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: PSSFeedbackModel
+        name: PSSFeedbackModel
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: PSSRequest
+        name: PSSRequest
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: PSSResponse
+        name: PSSResponse
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: FeedbackTask
+        name: FeedbackTask
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.pss
+        fhirBase: Task
+        status: published
+      - id: PSSDataAcquisitionForm
+        name: PSSDataAcquisitionForm
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.pss
+        fhirBase: Questionnaire
+        status: published
+      - id: PSSFeedbackBundle
+        name: PSSFeedbackBundle
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.pss
+        fhirBase: Bundle
+        status: published
+      - id: PSSMedicationRequest
+        name: PSSMedicationRequest
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.pss
+        fhirBase: MedicationRequest
+        status: published
+      - id: PSSPatient
+        name: PSSPatient
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.pss
+        fhirBase: Patient
+        status: published
+      - id: PSSQuestionnaireTask
+        name: PSSQuestionnaireTask
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.pss
+        fhirBase: Task
+        status: published
+      - id: PSSRequestBundle
+        name: PSSRequestBundle
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.pss
+        fhirBase: Bundle
+        status: published
+      - id: PSSResponseBundle
+        name: PSSResponseBundle
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.pss
+        fhirBase: Bundle
+        status: published
+      - id: PSSResponseCommunicationRequest
+        name: PSSResponseCommunicationRequest
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.pss
+        fhirBase: CommunicationRequest
+        status: published
+      - id: PSSResponseMedicationRequest
+        name: PSSResponseMedicationRequest
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.pss
+        fhirBase: MedicationRequest
+        status: published
+      - id: PSSResponseRequestGroup
+        name: PSSResponseRequestGroup
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.pss
+        fhirBase: RequestGroup
+        status: published
+      - id: PSSResponseServiceRequest
+        name: PSSResponseServiceRequest
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.pss
+        fhirBase: ServiceRequest
+        status: published
+      - id: BacterialCodes
+        name: BacterialCodes
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: CandidaCodes
+        name: CandidaCodes
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: ChlamydiaCodes
+        name: ChlamydiaCodes
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: CompromisedImmuneSystemCodes
+        name: CompromisedImmuneSystemCodes
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: GonokokCodes
+        name: GonokokCodes
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: MycoplasmaCodes
+        name: MycoplasmaCodes
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: OncologyPatientCodes
+        name: OncologyPatientCodes
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: OtherCodes
+        name: OtherCodes
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: PregnancyCodes
+        name: PregnancyCodes
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: pss-exception-valueset
+        name: PSSExceptionValueSet
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: PSSFeedbackCodesVS
+        name: PSSFeedbackCodesVS
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: PSSFeedbackReasonsVS
+        name: PSSFeedbackReasonsVS
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: PSSRatingTypesVS
+        name: PSSRatingTypesVS
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+      - id: TrichomonasCodes
+        name: TrichomonasCodes
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.pss
+        fhirBase: null
+        status: published
+    proposals: []
+  - id: be-referral
+    name: Referral
+    description: Referral prescription profiles
+    transversal: false
+    status: draft
+    repository: hl7-be/referral
+    dependencies:
+      - be-core
+    proposals: []
+    packages:
+      - hl7.fhir.be.drp
+    artifacts:
+      - id: be-cs-annex81-status-reason
+        name: BeCSAnnex81StatusReason
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-prescription-status-reason
+        name: BePrescriptionStatusReason
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-cs-temp-requested-service
+        name: BeTempRequestedService
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-cs-temp-requested-service-detail
+        name: BeTempRequestedServiceDetail
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-treatment-status-reason
+        name: BeTreatmentStatusReason
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-ext-feedback-to-prescriber
+        name: BeFeedbackToPrescriber
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-ext-latest-end-date
+        name: BeLatestEndDate
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-ext-performer-type
+        name: BePerformerType
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-ext-pss-info
+        name: BePSSInfo
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-ext-relevant-info
+        name: BeRelevantInfo
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-ext-validity-period
+        name: BeValidityPeriod
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: BeModelAnnex81
+        name: BeModelAnnex81
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: BeModelAssignment
+        name: BeModelAssignment
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: BeModelNursingPrescription
+        name: BeModelNursingPrescription
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: BeModelOrganisationClaim
+        name: BeModelOrganisationClaim
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: BeModelReferralPrescription
+        name: BeModelReferralPrescription
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: BeModelTreatmentStatus
+        name: BeModelTreatmentStatus
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-ns-uhmep-short
+        name: BeNsUhmepShort
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-ns-uhmep
+        name: BeUnadressedHealthMessageExchangePlatform
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-annex-81
+        name: BeAnnex81
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.drp
+        fhirBase: ServiceRequest
+        status: published
+      - id: be-organization-task
+        name: BeAssignmentTask
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.drp
+        fhirBase: Task
+        status: published
+      - id: be-performer-task
+        name: BePerformerTask
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.drp
+        fhirBase: Task
+        status: published
+      - id: be-referral-servicerequest
+        name: BeReferralServiceRequest
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.drp
+        fhirBase: ServiceRequest
+        status: published
+      - id: be-referral-servicerequest-nursing
+        name: BeReferralServiceRequestNursing
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.drp
+        fhirBase: ServiceRequest
+        status: published
+      - id: be-referral-task
+        name: BeReferralTask
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.drp
+        fhirBase: Task
+        status: published
+      - id: be-vs-referral-category
+        name: BeReferralCategory
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-vs-annex-81-reason-code
+        name: BeVSAnnex81ReasonCode
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-vs-annex81-status-reason
+        name: BeVSAnnex81StatusReason
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-vs-bodysite-nursing
+        name: BeVSBodySiteNursing
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-vs-performer-task-status-reason
+        name: BeVSPerformerTaskStatusReason
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-vs-prescription-status-reason
+        name: BeVSPrescriptionStatusReason
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-vs-requested-services-nurse
+        name: BeVSRequestedServicesNurse
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-vs-requested-services-nurse-detail
+        name: BeVSRequestedServicesNurseDetail
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-vs-request-intent
+        name: BeVSRequestIntent
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-vs-request-note-type
+        name: BeVSRequestNoteType
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-vs-task-intent
+        name: BeVSTaskIntent
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+      - id: be-vs-treatment-status-reason
+        name: BeVSTreatmentStatusReason
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.drp
+        fhirBase: null
+        status: published
+  - id: be-public-health
+    name: Public Health
+    description: Public health surveillance and reporting
+    transversal: false
+    status: published
+    repository: hl7-be/public-health
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/public-health
+    dependencies:
+      - be-core
+    packages:
+      - hl7.fhir.be.public-health
+    artifacts:
+      - id: be-cs-populationscreening-next-invitation-type
+        name: BeCSPopulationScreeningNextInvitationType
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.public-health
+        fhirBase: null
+        status: published
+      - id: BeModelPopulationScreening
+        name: BeModelPopulationScreening
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.public-health
+        fhirBase: null
+        status: published
+      - id: BeModelPopulationScreeningPlan
+        name: BeModelPopulationScreeningPlan
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.public-health
+        fhirBase: null
+        status: published
+      - id: cvko-id
+        name: CVKONamingSystem
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.public-health
+        fhirBase: null
+        status: published
+      - id: be-populationscreening-appointment
+        name: BePopulationScreeningAppointment
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.public-health
+        fhirBase: Appointment
+        status: published
+      - id: be-populationscreening-communication
+        name: BePopulationScreeningCommunication
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.public-health
+        fhirBase: Communication
+        status: published
+      - id: be-populationscreening-encounter
+        name: BePopulationScreeningEncounter
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.public-health
+        fhirBase: Encounter
+        status: published
+      - id: be-populationscreening-follow-up
+        name: BePopulationScreeningFollowUp
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.public-health
+        fhirBase: ServiceRequest
+        status: published
+      - id: be-populationscreening-observation
+        name: BePopulationScreeningObservation
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.public-health
+        fhirBase: Observation
+        status: published
+      - id: be-populationscreening-plan
+        name: BePopulationScreeningPlan
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.public-health
+        fhirBase: CarePlan
+        status: published
+      - id: be-populationscreening-result-vs
+        name: BePopulationScreeningResultVS
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.public-health
+        fhirBase: null
+        status: published
+      - id: be-vspopulationscreening-body-site-location
+        name: BeVSPopulationScreeningBodySiteLocation
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.public-health
+        fhirBase: null
+        status: published
+      - id: BeVSPopulationScreeningFollowUpAdvice
+        name: BeVSPopulationScreeningFollowUpAdvice
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.public-health
+        fhirBase: null
+        status: published
+      - id: be-vs-populationscreening-next-invitation-type
+        name: BeVSPopulationScreeningNextInvitationType
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.public-health
+        fhirBase: null
+        status: published
+      - id: be-vs-populationscreening-type
+        name: BeVSPopulationScreeningType
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.public-health
+        fhirBase: null
+        status: published
+    proposals: []
+  - id: be-infsec
+    name: Infrastructure & Security
+    description: Audit and consent profiles for Belgian eHealth services
+    transversal: false
+    status: published
+    repository: hl7-be/infsec
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/infsec
+    dependencies:
+      - be-core
+    packages:
+      - hl7.fhir.be.infsec
+    artifacts:
+      - id: be-cs-pseudonymization-type
+        name: BeCSPseudonymizationType
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.infsec
+        fhirBase: null
+        status: published
+      - id: be-cs-pseudonymization-version
+        name: BeCSPseudonymizationVersion
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.infsec
+        fhirBase: null
+        status: published
+      - id: be-ext-intended-profile
+        name: BeExtIntendedProfile
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.infsec
+        fhirBase: null
+        status: published
+      - id: be-ext-key-pseudonymization
+        name: BeExtKeyPseudonymization
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.infsec
+        fhirBase: null
+        status: published
+      - id: be-ext-pseudonymization
+        name: BeExtPseudonymization
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.infsec
+        fhirBase: null
+        status: published
+      - id: be-vs-pseudonymization-type
+        name: BeVSPseudonymizationType
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.infsec
+        fhirBase: null
+        status: published
+    proposals: []
+  - id: be-lab
+    name: Laboratory
+    description: Laboratory results profiles
+    transversal: false
+    status: published
+    repository: hl7-be/lab
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/lab
+    dependencies:
+      - be-core
+    packages:
+      - hl7.fhir.be.lab
+    artifacts:
+      - id: albert
+        name: Albert
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.lab
+        fhirBase: null
+        status: published
+      - id: be-cs-coded-annotation-types
+        name: BeCSCodedAnnotationTypes
+        type: codesystem
+        layer: T
+        package: hl7.fhir.be.lab
+        fhirBase: null
+        status: published
+      - id: annotation-code
+        name: BeExtAnnotationCode
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.lab
+        fhirBase: null
+        status: published
+      - id: be-ext-note
+        name: BeExtNote
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.lab
+        fhirBase: null
+        status: published
+      - id: be-ext-referencerange-comment
+        name: BeReferenceRangeComment
+        type: extension
+        layer: L3
+        package: hl7.fhir.be.lab
+        fhirBase: null
+        status: published
+      - id: be-ns-belac
+        name: BeBELAC
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.lab
+        fhirBase: null
+        status: published
+      - id: be-ns-lab-report-bundle-id
+        name: BeLabReportBundleId
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.lab
+        fhirBase: null
+        status: published
+      - id: be-ns-lab-report-diagnostic-report-id
+        name: BeLabReportDiagnosticReportId
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.lab
+        fhirBase: null
+        status: published
+      - id: be-ns-retam
+        name: BeRetam
+        type: namingsystem
+        layer: T
+        package: hl7.fhir.be.lab
+        fhirBase: null
+        status: published
+      - id: coded-annotation
+        name: BeCodedAnnotation
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.lab
+        fhirBase: Annotation
+        status: published
+      - id: be-laboratory-report
+        name: BeLaboratoryReport
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.lab
+        fhirBase: DiagnosticReport
+        status: published
+      - id: be-laboratory-report-composition
+        name: BeLaboratoryReportComposition
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.lab
+        fhirBase: Composition
+        status: published
+      - id: be-observation-laboratory
+        name: BeObservationLaboratory
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.lab
+        fhirBase: Observation
+        status: published
+      - id: be-specimen-laboratory
+        name: BeSpecimenLaboratory
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.lab
+        fhirBase: Specimen
+        status: published
+      - id: be-vs-coded-annotation-types
+        name: BeVSCodedAnnotationTypes
+        type: valueset
+        layer: T
+        package: hl7.fhir.be.lab
+        fhirBase: null
+        status: published
+    proposals: []
+  - id: be-patient-dossier
+    name: Patient Dossier
+    description: Patient dossier and document exchange
+    transversal: false
+    status: published
+    repository: hl7-be/patient-dossier
+    dependencies:
+      - be-core
+    proposals: []
+    packages:
+      - hl7.fhir.be.patient-dossier
+    artifacts:
+      - id: BeModelDocument
+        name: BeModelDocument
+        type: logical-model
+        layer: L2
+        package: hl7.fhir.be.patient-dossier
+        fhirBase: null
+        status: published
+      - id: be-document
+        name: BeDocument
+        type: profile
+        layer: L3
+        package: hl7.fhir.be.patient-dossier
+        fhirBase: Bundle
+        status: published
+caresets:
+  - id: patient
+    name: Patient
+    description: Belgian Patient identification and demographics
+    project: be-core
+    status: published
+    deliveries:
+      - version: 2.1.2
+        current: true
+        status: published
+        initiatedDate: "2024-05-01"
+        document:
+          version: "2.1"
+          status: approved
+          date: "2024-07-15"
+        l2:
+          - package: hl7.fhir.be.core
+            version: 2.1.2
+            status: published
+            deliveredDate: "2024-08-01"
+            artifacts:
+              - id: bemodelpatient
+                name: BeModelPatient
+                type: logical-model
+                status: published
+              - id: bemodelpatientdocument
+                name: BeModelPatientDocument
+                type: logical-model
+                status: published
+        l3:
+          - package: hl7.fhir.be.core
+            igId: be-core
+            version: 2.1.2
+            status: published
+            deliveredDate: "2024-08-30"
+            publishedDate: "2024-08-30"
+            artifacts:
+              - id: be-ext-codeableconcept
+                name: BeExtCodeableConcept
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-codeable-reference
+                name: BeExtCodeableReference
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-gender-at-birth
+                name: BeExtGenderAtBirth
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-recorder
+                name: BeExtRecorder
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-simple-note
+                name: BeExtSimpleNote
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-address
+                name: BeAddress
+                type: profile
+                fhirBase: Address
+                status: published
+              - id: be-coded-annotation
+                name: BeCodedAnnotation
+                type: profile
+                fhirBase: Annotation
+                status: published
+              - id: be-communication
+                name: BeCommunication
+                type: profile
+                fhirBase: Communication
+                status: published
+              - id: be-documentreference
+                name: BeDocumentReference
+                type: profile
+                fhirBase: DocumentReference
+                status: published
+              - id: be-organization
+                name: BeOrganization
+                type: profile
+                fhirBase: Organization
+                status: published
+              - id: be-patient
+                name: BePatient
+                type: profile
+                fhirBase: Patient
+                status: published
+              - id: be-practitioner
+                name: BePractitioner
+                type: profile
+                fhirBase: Practitioner
+                status: published
+              - id: be-practitionerrole
+                name: BePractitionerRole
+                type: profile
+                fhirBase: PractitionerRole
+                status: published
+              - id: be-provenance
+                name: BeProvenance
+                type: profile
+                fhirBase: Provenance
+                status: published
+        t:
+          - package: hl7.fhir.be.core
+            version: 2.1.2
+            status: published
+            deliveredDate: null
+            artifacts:
+              - id: be-cs-care-location
+                name: BeCSCareLocation
+                type: codesystem
+                status: published
+              - id: cd-fed-country
+                name: Cdfedcountry
+                type: codesystem
+                status: published
+              - id: cd-civilstate
+                name: CivilState
+                type: codesystem
+                status: published
+              - id: cd-contact-person
+                name: ContactPerson
+                type: codesystem
+                status: published
+              - id: cd-hcparty
+                name: HCParty
+                type: codesystem
+                status: published
+              - id: be-cbe
+                name: BeCBENamingSystem
+                type: namingsystem
+                status: published
+              - id: be-ehp
+                name: BeEhealthPartnerIDNamingSystem
+                type: namingsystem
+                status: published
+              - id: be-insurancenumber
+                name: BeInsuranceNumberNamingSystem
+                type: namingsystem
+                status: published
+              - id: be-insurancymembership
+                name: BeInsurancymembershipNamingSystem
+                type: namingsystem
+                status: published
+              - id: be-nihdi
+                name: BeNIHDINamingSystem
+                type: namingsystem
+                status: published
+              - id: be-ns-nihdi-nomenclature
+                name: BeNSNihdiNomenclature
+                type: namingsystem
+                status: published
+              - id: be-ns-nihdi-organization
+                name: BeNSNIHDIOrganization
+                type: namingsystem
+                status: published
+              - id: be-ns-nihdi-professional
+                name: BeNSNIHDIProfessional
+                type: namingsystem
+                status: published
+              - id: be-ssin
+                name: BeSSINNamingSystem
+                type: namingsystem
+                status: published
+              - id: be-civilstate
+                name: BeCivilstate
+                type: valueset
+                status: published
+              - id: be-contactperson
+                name: BeContactPerson
+                type: valueset
+                status: published
+              - id: be-vs-care-location
+                name: BeVSCareLocation
+                type: valueset
+                status: published
+              - id: be-vs-cd-hcparty
+                name: BeVSCdHcParty
+                type: valueset
+                status: published
+              - id: be-vs-gender-at-birth
+                name: BeVSGenderAtBirth
+                type: valueset
+                status: published
+              - id: be-vs-patient-relationship-type
+                name: BeVSPatientRelationshipType
+                type: valueset
+                status: published
+      - version: 2.0.0
+        status: published
+        initiatedDate: "2021-06-01"
+        document:
+          version: "2.0"
+          status: approved
+          date: "2022-02-01"
+        l2:
+          - package: hl7.fhir.be.core
+            version: 2.0.0
+            status: published
+            deliveredDate: "2022-03-01"
+            basedOnDocument: "2.0"
+            artifacts:
+              - id: patient-model
+                name: BePatient
+                type: logical-model
+                status: published
+        l3:
+          - package: hl7.fhir.be.core
+            igId: be-core
+            version: 2.0.0
+            status: published
+            deliveredDate: "2022-03-24"
+            publishedDate: "2022-03-24"
+            basedOnDocument: "2.0"
+            artifacts:
+              - id: patient-profile
+                name: BePatient
+                type: profile
+                fhirBase: Patient
+                status: published
+  - id: medication-prescription
+    name: MedicationPrescription
+    description: Prescription of medication
+    project: be-medication
+    status: published
+    deliveries:
+      - version: 1.1.0
+        status: published
+        current: true
+        initiatedDate: "2025-04-01"
+        document:
+          version: "1.1"
+          status: approved
+          date: "2025-06-01"
+        businessDocuments:
+          - title: Medication Prescription Business Spec
+            version: "1.1"
+            date: "2025-05-15"
+            status: approved
+            file: docs/business/medication-prescription-v1.1.docx
+        l2:
+          - package: hl7.fhir.be.medication
+            version: 1.1.0
+            status: published
+            deliveredDate: "2025-08-15"
+            artifacts:
+              - id: bemodeldosaginginformation
+                name: BeModelDosagingInformation
+                type: logical-model
+                status: published
+              - id: bemodelmedication
+                name: BeModelMedication
+                type: logical-model
+                status: published
+              - id: bemodelmedicationdispense
+                name: BeModelMedicationDispense
+                type: logical-model
+                status: published
+              - id: bemodelmedicationprescription
+                name: BeModelMedicationPrescription
+                type: logical-model
+                status: published
+              - id: bemodelmedicationline
+                name: MedicationLine
+                type: logical-model
+                status: published
+        l3:
+          - package: hl7.fhir.be.medication
+            igId: be-medication
+            version: 1.1.0
+            status: published
+            deliveredDate: "2025-09-20"
+            publishedDate: "2025-10-10"
+            artifacts:
+              - id: basedonmedicationline
+                name: BasedOnMedicationLine
+                type: extension
+                fhirBase: null
+                status: published
+              - id: beextadherencestatus
+                name: BeExtAdherenceStatus
+                type: extension
+                fhirBase: null
+                status: published
+              - id: beextinstructionsforreimbursement
+                name: BeExtInstructionsForReimbursement
+                type: extension
+                fhirBase: null
+                status: published
+              - id: beextmedicationlineregistrationstatus
+                name: BeExtMedicationLineRegistrationStatus
+                type: extension
+                fhirBase: null
+                status: published
+              - id: beextmedicationtype
+                name: BeExtMedicationType
+                type: extension
+                fhirBase: null
+                status: published
+              - id: beextofflabel
+                name: BeExtOffLabel
+                type: extension
+                fhirBase: null
+                status: published
+              - id: beextrecordeddate
+                name: BeExtRecordedDate
+                type: extension
+                fhirBase: null
+                status: published
+              - id: beextrecorder
+                name: BeExtRecorder
+                type: extension
+                fhirBase: null
+                status: published
+              - id: bemedicationexposurecategory
+                name: BeMedicationExposureCategory
+                type: extension
+                fhirBase: null
+                status: published
+              - id: bedosage
+                name: BeDosage
+                type: profile
+                fhirBase: Dosage
+                status: published
+              - id: bemedicationdispense
+                name: BeMedicationDispense
+                type: profile
+                fhirBase: MedicationDispense
+                status: published
+              - id: bemedicationline
+                name: BeMedicationLine
+                type: profile
+                fhirBase: MedicationStatement
+                status: published
+              - id: bemedicationprescription
+                name: BeMedicationPrescription
+                type: profile
+                fhirBase: MedicationRequest
+                status: published
+        t:
+          - package: hl7.fhir.be.medication
+            version: 1.1.0
+            status: published
+            deliveredDate: null
+            artifacts:
+              - id: bemedicationlineadherencestatus
+                name: BeMedicationLineAdherenceStatus
+                type: codesystem
+                status: published
+              - id: bemedicationlineadherencestatusreason
+                name: BeMedicationLineAdherenceStatusReason
+                type: codesystem
+                status: published
+              - id: bemedicationlineorigintype
+                name: BeMedicationLineOriginType
+                type: codesystem
+                status: published
+              - id: bemedicationlineregistrationstatus
+                name: BeMedicationLineRegistrationStatus
+                type: codesystem
+                status: published
+              - id: bemedicationrequestreimbursementtype
+                name: BeMedicationRequestReimbursementType
+                type: codesystem
+                status: published
+              - id: bemedicationtype
+                name: BeMedicationType
+                type: codesystem
+                status: published
+              - id: be-ns-cnk-codes
+                name: BeNSCNK
+                type: namingsystem
+                status: published
+              - id: be-ns-cti-extended-code
+                name: BeNSCTIExtended
+                type: namingsystem
+                status: published
+              - id: be-ns-prescription-ids
+                name: BeNSPrescriptions
+                type: namingsystem
+                status: published
+              - id: be-ns-product-package-type
+                name: BeNSProductPackage
+                type: namingsystem
+                status: published
+              - id: bemedicationexposureintentvs
+                name: BeMedicationExposureIntentVS
+                type: valueset
+                status: published
+              - id: bemedicationlineadherencestatusreasonvs
+                name: BeMedicationLineAdherenceStatusReasonVS
+                type: valueset
+                status: published
+              - id: bemedicationlineadherencestatusvs
+                name: BeMedicationLineAdherenceStatusVS
+                type: valueset
+                status: published
+              - id: bemedicationlineorigintypevs
+                name: BeMedicationLineOriginTypeVS
+                type: valueset
+                status: published
+              - id: bemedicationlineregistrationstatusvs
+                name: BeMedicationLineRegistrationStatusVS
+                type: valueset
+                status: published
+              - id: bemedicationprescriptionstatusvs
+                name: BeMedicationPrescriptionStatusVS
+                type: valueset
+                status: published
+              - id: bemedicationrequestreimbursementtypevs
+                name: BeMedicationRequestReimbursementTypeVS
+                type: valueset
+                status: published
+              - id: bemedicationtypevs
+                name: BeMedicationTypeVS
+                type: valueset
+                status: published
+              - id: berouteofadministrationvs
+                name: BeRouteOfAdministrationVS
+                type: valueset
+                status: published
+              - id: be-vs-dispenser-types
+                name: DispenserTypes
+                type: valueset
+                status: published
+      - version: 1.0.0
+        status: published
+        current: false
+        initiatedDate: "2021-09-01"
+        document:
+          version: "1.0"
+          status: approved
+          date: "2022-04-01"
+        l2:
+          - package: hl7.fhir.be.medication
+            version: 1.0.0
+            status: published
+            deliveredDate: "2022-04-20"
+            basedOnDocument: "1.0"
+            artifacts:
+              - id: prescription-model
+                name: MedicationPrescription
+                type: logical-model
+                status: published
+        t:
+          - package: hl7.fhir.be.medication
+            version: 1.0.0
+            status: published
+            deliveredDate: "2022-04-20"
+            basedOnDocument: "1.0"
+            artifacts:
+              - id: prescription-type-vs
+                name: MedicationPrescriptionType
+                type: valueset
+                status: published
+        l3:
+          - package: hl7.fhir.be.medication
+            igId: be-medication
+            version: 1.0.0
+            status: published
+            deliveredDate: "2022-05-15"
+            publishedDate: "2022-05-31"
+            basedOnDocument: "1.0"
+            artifacts:
+              - id: prescription-profile
+                name: BeMedicationPrescription
+                type: profile
+                fhirBase: MedicationRequest
+                status: published
+  - id: medication-dispense
+    name: MedicationDispense
+    description: Dispense of medication
+    project: be-medication
+    status: published
+    deliveries:
+      - version: 2.0.0
+        status: draft
+        current: true
+        initiatedDate: "2025-09-01"
+        document:
+          version: "2.0"
+          status: draft
+          date: "2025-11-01"
+        l2:
+          - package: hl7.fhir.be.medication
+            version: 1.1.0
+            status: published
+            deliveredDate: null
+            artifacts:
+              - id: bemodeldosaginginformation
+                name: BeModelDosagingInformation
+                type: logical-model
+                status: published
+              - id: bemodelmedication
+                name: BeModelMedication
+                type: logical-model
+                status: published
+              - id: bemodelmedicationdispense
+                name: BeModelMedicationDispense
+                type: logical-model
+                status: published
+              - id: bemodelmedicationprescription
+                name: BeModelMedicationPrescription
+                type: logical-model
+                status: published
+              - id: bemodelmedicationline
+                name: MedicationLine
+                type: logical-model
+                status: published
+        l3:
+          - package: hl7.fhir.be.medication
+            igId: be-medication
+            version: 1.1.0
+            status: published
+            deliveredDate: null
+            publishedDate: null
+            artifacts:
+              - id: basedonmedicationline
+                name: BasedOnMedicationLine
+                type: extension
+                fhirBase: null
+                status: published
+              - id: beextadherencestatus
+                name: BeExtAdherenceStatus
+                type: extension
+                fhirBase: null
+                status: published
+              - id: beextinstructionsforreimbursement
+                name: BeExtInstructionsForReimbursement
+                type: extension
+                fhirBase: null
+                status: published
+              - id: beextmedicationlineregistrationstatus
+                name: BeExtMedicationLineRegistrationStatus
+                type: extension
+                fhirBase: null
+                status: published
+              - id: beextmedicationtype
+                name: BeExtMedicationType
+                type: extension
+                fhirBase: null
+                status: published
+              - id: beextofflabel
+                name: BeExtOffLabel
+                type: extension
+                fhirBase: null
+                status: published
+              - id: beextrecordeddate
+                name: BeExtRecordedDate
+                type: extension
+                fhirBase: null
+                status: published
+              - id: beextrecorder
+                name: BeExtRecorder
+                type: extension
+                fhirBase: null
+                status: published
+              - id: bemedicationexposurecategory
+                name: BeMedicationExposureCategory
+                type: extension
+                fhirBase: null
+                status: published
+              - id: bedosage
+                name: BeDosage
+                type: profile
+                fhirBase: Dosage
+                status: published
+              - id: bemedicationdispense
+                name: BeMedicationDispense
+                type: profile
+                fhirBase: MedicationDispense
+                status: published
+              - id: bemedicationline
+                name: BeMedicationLine
+                type: profile
+                fhirBase: MedicationStatement
+                status: published
+              - id: bemedicationprescription
+                name: BeMedicationPrescription
+                type: profile
+                fhirBase: MedicationRequest
+                status: published
+        t:
+          - package: hl7.fhir.be.medication
+            version: 1.1.0
+            status: published
+            deliveredDate: null
+            artifacts:
+              - id: bemedicationlineadherencestatus
+                name: BeMedicationLineAdherenceStatus
+                type: codesystem
+                status: published
+              - id: bemedicationlineadherencestatusreason
+                name: BeMedicationLineAdherenceStatusReason
+                type: codesystem
+                status: published
+              - id: bemedicationlineorigintype
+                name: BeMedicationLineOriginType
+                type: codesystem
+                status: published
+              - id: bemedicationlineregistrationstatus
+                name: BeMedicationLineRegistrationStatus
+                type: codesystem
+                status: published
+              - id: bemedicationrequestreimbursementtype
+                name: BeMedicationRequestReimbursementType
+                type: codesystem
+                status: published
+              - id: bemedicationtype
+                name: BeMedicationType
+                type: codesystem
+                status: published
+              - id: be-ns-cnk-codes
+                name: BeNSCNK
+                type: namingsystem
+                status: published
+              - id: be-ns-cti-extended-code
+                name: BeNSCTIExtended
+                type: namingsystem
+                status: published
+              - id: be-ns-prescription-ids
+                name: BeNSPrescriptions
+                type: namingsystem
+                status: published
+              - id: be-ns-product-package-type
+                name: BeNSProductPackage
+                type: namingsystem
+                status: published
+              - id: bemedicationexposureintentvs
+                name: BeMedicationExposureIntentVS
+                type: valueset
+                status: published
+              - id: bemedicationlineadherencestatusreasonvs
+                name: BeMedicationLineAdherenceStatusReasonVS
+                type: valueset
+                status: published
+              - id: bemedicationlineadherencestatusvs
+                name: BeMedicationLineAdherenceStatusVS
+                type: valueset
+                status: published
+              - id: bemedicationlineorigintypevs
+                name: BeMedicationLineOriginTypeVS
+                type: valueset
+                status: published
+              - id: bemedicationlineregistrationstatusvs
+                name: BeMedicationLineRegistrationStatusVS
+                type: valueset
+                status: published
+              - id: bemedicationprescriptionstatusvs
+                name: BeMedicationPrescriptionStatusVS
+                type: valueset
+                status: published
+              - id: bemedicationrequestreimbursementtypevs
+                name: BeMedicationRequestReimbursementTypeVS
+                type: valueset
+                status: published
+              - id: bemedicationtypevs
+                name: BeMedicationTypeVS
+                type: valueset
+                status: published
+              - id: berouteofadministrationvs
+                name: BeRouteOfAdministrationVS
+                type: valueset
+                status: published
+              - id: be-vs-dispenser-types
+                name: DispenserTypes
+                type: valueset
+                status: published
+      - version: 1.0.0
+        status: published
+        current: false
+        initiatedDate: "2021-09-01"
+        document: null
+        l2:
+          - package: hl7.fhir.be.medication
+            version: 1.0.0
+            status: published
+            deliveredDate: "2022-04-20"
+            artifacts:
+              - id: dispense-model
+                name: MedicationDispense
+                type: logical-model
+                status: published
+        l3:
+          - package: hl7.fhir.be.medication
+            igId: be-medication
+            version: 1.0.0
+            status: published
+            deliveredDate: "2022-05-15"
+            publishedDate: "2022-05-31"
+            artifacts:
+              - id: dispense-profile
+                name: BeMedicationDispense
+                type: profile
+                fhirBase: MedicationDispense
+                status: published
+  - id: problem
+    name: Problem
+    description: Belgian problem/condition
+    project: be-core-clinical
+    status: published
+    deliveries:
+      - version: 1.0.0
+        status: published
+        current: true
+        initiatedDate: "2021-09-01"
+        document: null
+        l2:
+          - package: hl7.fhir.be.core-clinical
+            version: 1.1.0
+            status: published
+            deliveredDate: "2022-05-01"
+            artifacts:
+              - id: bemodelbodysite
+                name: BeModelBodySite
+                type: logical-model
+                status: published
+              - id: bemodelclinicalobservation
+                name: BeModelClinicalObservation
+                type: logical-model
+                status: published
+              - id: bemodelprocedure
+                name: BeModelProcedure
+                type: logical-model
+                status: published
+        l3:
+          - package: hl7.fhir.be.core-clinical
+            igId: be-core-clinical
+            version: 1.1.0
+            status: published
+            deliveredDate: "2022-05-31"
+            publishedDate: "2022-05-31"
+            artifacts:
+              - id: be-ext-body-topography
+                name: BeExtBodyTopography
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-laterality
+                name: BeExtLaterality
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-problem-origin-type
+                name: BeExtProblemOriginType
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-surgical-approach
+                name: BeExtSurgicalApproach
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-clinical-observation
+                name: BeClinicalObservation
+                type: profile
+                fhirBase: Observation
+                status: published
+              - id: be-observation
+                name: BeObservation
+                type: profile
+                fhirBase: Observation
+                status: published
+              - id: be-observationcodeableconcept
+                name: BeObservationCodeableConcept
+                type: profile
+                fhirBase: CodeableConcept
+                status: published
+              - id: be-problem
+                name: BeProblem
+                type: profile
+                fhirBase: Condition
+                status: published
+              - id: be-procedure
+                name: BeProcedure
+                type: profile
+                fhirBase: Procedure
+                status: published
+              - id: be-scoreresult
+                name: BeScoreResult
+                type: profile
+                fhirBase: Observation
+                status: published
+        t:
+          - package: hl7.fhir.be.core-clinical
+            version: 1.1.0
+            status: published
+            deliveredDate: null
+            artifacts:
+              - id: be-cs-bodysite
+                name: BeCSBodySite
+                type: codesystem
+                status: published
+              - id: be-cs-problem-category
+                name: BeCSProblemCategory
+                type: codesystem
+                status: published
+              - id: be-cs-problem-origin-type
+                name: BeCSProblemOriginType
+                type: codesystem
+                status: published
+              - id: be-cs-score
+                name: BeCSScore
+                type: codesystem
+                status: published
+              - id: be-cs-score-category
+                name: BeCSScoreCategory
+                type: codesystem
+                status: published
+              - id: be-vs-bodysite
+                name: BeVSBodySite
+                type: valueset
+                status: published
+              - id: be-vs-body-topography
+                name: BeVSBodyTopography
+                type: valueset
+                status: published
+              - id: be-vs-laterality
+                name: BeVSLaterality
+                type: valueset
+                status: published
+              - id: be-vs-problem-category
+                name: BeVSProblemCategory
+                type: valueset
+                status: published
+              - id: be-vs-problem-code
+                name: BeVSProblemCode
+                type: valueset
+                status: published
+              - id: be-vs-problem-origin-type
+                name: BeVSProblemOriginType
+                type: valueset
+                status: published
+              - id: be-vs-reaction-manifestation-code
+                name: BeVSReactionManifestationCode
+                type: valueset
+                status: published
+              - id: be-vs-score
+                name: BeVSScore
+                type: valueset
+                status: published
+              - id: be-vs-scorecategory
+                name: BeVSScoreCategory
+                type: valueset
+                status: published
+  - id: terminology
+    name: Terminology
+    description: Belgian code systems and value sets
+    project: be-terminology
+    status: wip
+    deliveries:
+      - version: 1.0.0
+        status: wip
+        current: true
+        initiatedDate: "2026-03-13"
+        document: null
+        l2: []
+        t:
+          - package: hl7.fhir.be.terminology
+            version: 1.0.0
+            status: wip
+            artifacts: []
+        l3: []
+  - id: allergy-intolerance
+    name: AllergyIntolerance
+    description: Belgian allergy and intolerance recording
+    project: be-allergy
+    status: published
+    deliveries:
+      - version: 1.2.0
+        status: published
+        current: true
+        initiatedDate: "2023-06-01"
+        document: null
+        businessDocuments:
+          - title: Allergy Intolerance Business Specification
+            version: "2.1"
+            date: "2023-07-15"
+            status: approved
+            file: docs/business/allergy-business-v2.1.docx
+          - title: Allergy Intolerance Business Specification
+            version: "1.0"
+            date: "2022-03-01"
+            status: approved
+            file: docs/business/allergy-business-v1.0.docx
+        l2:
+          - package: hl7.fhir.be.allergy
+            version: 1.2.0
+            status: published
+            deliveredDate: "2023-11-01"
+            artifacts:
+              - id: be-model-allergyintolerance
+                name: BeModelAllergyIntolerance
+                type: logical-model
+                status: published
+        l3:
+          - package: hl7.fhir.be.allergy
+            igId: be-allergy
+            version: 1.2.0
+            status: published
+            deliveredDate: "2023-12-18"
+            publishedDate: "2023-12-18"
+            artifacts:
+              - id: be-ext-allergy-type
+                name: BeExtAllergyType
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-allergyintolerance
+                name: BeAllergyIntolerance
+                type: profile
+                fhirBase: AllergyIntolerance
+                status: published
+        t:
+          - package: hl7.fhir.be.allergy
+            version: 1.2.0
+            status: published
+            deliveredDate: null
+            artifacts:
+              - id: be-ns-allergy
+                name: BeNSAllergy
+                type: namingsystem
+                status: published
+              - id: be-allergyintolerancecode
+                name: BeAllergyIntoleranceCode
+                type: valueset
+                status: published
+              - id: be-causativeagent
+                name: BeCausativeAgent
+                type: valueset
+                status: published
+              - id: be-exposureroute
+                name: BeExposureRoute
+                type: valueset
+                status: published
+              - id: be-noallergy
+                name: BeNoAllergy
+                type: valueset
+                status: published
+              - id: be-riskmanifestation
+                name: BeRiskManifestation
+                type: valueset
+                status: published
+              - id: be-vs-allergyintolerance-type
+                name: BeVSAllergyIntoleranceType
+                type: valueset
+                status: published
+  - id: vaccination
+    name: Vaccination
+    description: Belgian vaccination recording
+    project: be-vaccination
+    status: published
+    deliveries:
+      - version: 1.1.2
+        status: published
+        current: true
+        initiatedDate: "2025-06-01"
+        document: null
+        l2:
+          - package: hl7.fhir.be.vaccination
+            version: 1.1.2
+            status: published
+            deliveredDate: "2025-10-01"
+            artifacts:
+              - id: be-model-vaccination
+                name: BeModelVaccination
+                type: logical-model
+                status: published
+              - id: be-model-vaccination-reduced
+                name: BeModelVaccinationReduced
+                type: logical-model
+                status: published
+        l3:
+          - package: hl7.fhir.be.vaccination
+            igId: be-vaccination
+            version: 1.1.2
+            status: published
+            deliveredDate: "2025-11-27"
+            publishedDate: "2025-11-27"
+            artifacts:
+              - id: be-ext-administeredproduct
+                name: BeAdministeredProduct
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-simple-note
+                name: BeExtSimpleNote
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-vaccination-confirmationstatus
+                name: BeVaccinationConfirmationStatus
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-vaccination-originalorder
+                name: BeVaccinationOriginalOrder
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-vaccination-stock-funding-organization
+                name: BeVaccinationStockFundingOrganization
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-vaccination-stock-location
+                name: BeVaccinationStockLocation
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-vaccination
+                name: BeVaccination
+                type: profile
+                fhirBase: Immunization
+                status: published
+        t:
+          - package: hl7.fhir.be.vaccination
+            version: 1.1.2
+            status: published
+            deliveredDate: null
+            artifacts:
+              - id: be-cs-care-location
+                name: BeCSCareLocation
+                type: codesystem
+                status: published
+              - id: be-cs-vaccination-status-reason
+                name: BeCSStatusReason
+                type: codesystem
+                status: published
+              - id: be-cs-vaccination-confirmation-status
+                name: BeCSVaccinationConfirmationStatus
+                type: codesystem
+                status: published
+              - id: be-cs-vaccination-administration-route
+                name: BeCSVaccineAdministrationRoute
+                type: codesystem
+                status: published
+              - id: be-cs-vaccine-code
+                name: BeCSVaccineCode
+                type: codesystem
+                status: published
+              - id: be-cs-vaccine-target-disease
+                name: BeCSVaccineTargetDisease
+                type: codesystem
+                status: published
+              - id: be-ns-product-manufacturer
+                name: BeNSManufacturer
+                type: namingsystem
+                status: published
+              - id: be-ns-one-vaccination
+                name: BeNSONEVaccineCode
+                type: namingsystem
+                status: published
+              - id: be-ns-vaccinnet-vaccinecode
+                name: BeNSVaccinetVaccineCode
+                type: namingsystem
+                status: published
+              - id: be-vs-care-location
+                name: BeVSCareLocation
+                type: valueset
+                status: published
+              - id: be-vs-vaccination-bodysite
+                name: BeVSVaccinationBodySite
+                type: valueset
+                status: published
+              - id: be-vs-vaccination-confirmation-status
+                name: BeVSVaccinationConfirmationStatus
+                type: valueset
+                status: published
+              - id: be-vs-vaccination-product
+                name: BeVSVaccinationProduct
+                type: valueset
+                status: published
+              - id: be-vs-vaccination-reason-code
+                name: BeVSVaccinationReasonCode
+                type: valueset
+                status: published
+              - id: be-vs-vaccination-status-reason
+                name: BeVSVaccinationStatusReason
+                type: valueset
+                status: published
+              - id: be-vs-vaccination-administration-route
+                name: BeVSVaccineAdministrationRoute
+                type: valueset
+                status: published
+              - id: be-vs-vaccine-code
+                name: BeVSVaccineCode
+                type: valueset
+                status: published
+              - id: be-vs-vaccine-target-disease
+                name: BeVSVaccineTargetDisease
+                type: valueset
+                status: published
+  - id: mycarenet-messages
+    name: MyCareNet Messages
+    description: eBirth, eAttest, eMediPrior and other MyCareNet services
+    project: be-mycarenet
+    status: published
+    deliveries:
+      - version: 2.1.2
+        status: published
+        current: true
+        initiatedDate: "2025-04-01"
+        document: null
+        l2:
+          - package: hl7.fhir.be.mycarenet
+            version: 2.1.2
+            status: published
+            deliveredDate: null
+            artifacts:
+              - id: be-model-eagreement
+                name: BeModelEAgreement
+                type: logical-model
+                status: published
+              - id: be-model-eagreement-response
+                name: BeModelEAgreementResponse
+                type: logical-model
+                status: published
+        l3:
+          - package: hl7.fhir.be.mycarenet
+            igId: be-mycarenet
+            version: 2.1.2
+            status: published
+            deliveredDate: "2025-07-10"
+            publishedDate: "2025-07-10"
+            artifacts:
+              - id: be-ext-mycarenet-item-patientfee
+                name: BeExtItemPatientFee
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-mycarenet-item-reimbursement
+                name: BeExtItemReimbursement
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-system
+                name: BeExtSystem
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-mycarenet-coverage
+                name: BeMyCareNetCoverage
+                type: profile
+                fhirBase: Coverage
+                status: published
+              - id: be-eagreementclaim
+                name: BeMyCareNetEagreementClaim
+                type: profile
+                fhirBase: Claim
+                status: published
+              - id: be-eagreementclaimresponse
+                name: BeMyCareNetEagreementClaimResponse
+                type: profile
+                fhirBase: ClaimResponse
+                status: published
+              - id: be-eagreementconsult
+                name: BeMyCareNetEagreementconsult
+                type: profile
+                fhirBase: Bundle
+                status: published
+              - id: be-eagreementconsultreply
+                name: BeMyCareNetEagreementConsultReply
+                type: profile
+                fhirBase: Bundle
+                status: published
+              - id: be-eagreementdemand
+                name: BeMyCareNetEAgreementDemand
+                type: profile
+                fhirBase: Bundle
+                status: published
+              - id: be-eagreementdemandreply
+                name: BeMyCareNetEagreementDemandReply
+                type: profile
+                fhirBase: Bundle
+                status: published
+              - id: be-eagreementservicerequest
+                name: BeMyCareNetEagreementServiceRequest
+                type: profile
+                fhirBase: ServiceRequest
+                status: published
+              - id: be-eagreementservicerequest-binary
+                name: BeMyCareNetEagreementServiceRequestBinary
+                type: profile
+                fhirBase: Binary
+                status: published
+              - id: be-messageheader
+                name: BeMyCareNetMessageHeader
+                type: profile
+                fhirBase: MessageHeader
+                status: published
+              - id: be-operationoutcome
+                name: BeMyCareNetOperationOutcome
+                type: profile
+                fhirBase: OperationOutcome
+                status: published
+              - id: be-eagreementclaim-kine
+                name: MyBeMyCareNetEagreementClaimKine
+                type: profile
+                fhirBase: Claim
+                status: published
+              - id: be-eagreementclaim-logo
+                name: MyBeMyCareNetEagreementClaimLogo
+                type: profile
+                fhirBase: Claim
+                status: published
+        t:
+          - package: hl7.fhir.be.mycarenet
+            version: 2.1.2
+            status: published
+            deliveredDate: null
+            artifacts:
+              - id: be-cs-holder-code-1
+                name: BeCSHolderCode1
+                type: codesystem
+                status: published
+              - id: be-cs-holder-code-2
+                name: BeCSHolderCode2
+                type: codesystem
+                status: published
+              - id: be-cs-partial-agreement-values
+                name: BeCSPartialAgreementValues
+                type: codesystem
+                status: published
+              - id: agreement-errors
+                name: MyCareNetAgreementErrors
+                type: codesystem
+                status: published
+              - id: agreement-types
+                name: MyCareNetAgreementTypes
+                type: codesystem
+                status: published
+              - id: annex-types
+                name: MyCareNetAnnexTypes
+                type: codesystem
+                status: published
+              - id: decision-values
+                name: MyCareNetDecisionValues
+                type: codesystem
+                status: published
+              - id: message-events
+                name: MyCareNetMessageEvents
+                type: codesystem
+                status: published
+              - id: refusal-values
+                name: MyCareNetRefusalValues
+                type: codesystem
+                status: published
+              - id: waitingforinformation-values
+                name: MyCareNetWaitingForInformationValues
+                type: codesystem
+                status: published
+              - id: nihdi-physiotherapy-pathologysituationcode
+                name: NIHDIPhysiotherapyPathologySituationCode
+                type: codesystem
+                status: published
+              - id: be-ns-claim-related-claim
+                name: BeNSClaimRelatedClaim
+                type: namingsystem
+                status: published
+              - id: eagreementadjudicationreason
+                name: BeEAgreementAdjudicationReason
+                type: valueset
+                status: published
+              - id: eagreementmessage
+                name: BeMessageEAgreement
+                type: valueset
+                status: published
+              - id: eagreementproductorservice
+                name: BeProductOrServiceNihdiEAgreement
+                type: valueset
+                status: published
+              - id: be-vs-basic-laterality
+                name: BeVSBasicLaterality
+                type: valueset
+                status: published
+              - id: be-vs-decision-values
+                name: BeVSDecisionValues
+                type: valueset
+                status: published
+              - id: be-vs-eagreementerrors
+                name: BeVSEagreementErrors
+                type: valueset
+                status: published
+              - id: be-vs-holder-code-1
+                name: BeVSHolderCode1
+                type: valueset
+                status: published
+              - id: be-vs-holder-code-2
+                name: BeVSHolderCode2
+                type: valueset
+                status: published
+              - id: be-vs-toothnumber-bodysite
+                name: BeVSToothNumberBodySite
+                type: valueset
+                status: published
+  - id: care-plan
+    name: CarePlan
+    description: Belgian care plan and care team
+    project: be-patient-care
+    status: published
+    deliveries:
+      - version: 1.1.0
+        status: published
+        current: true
+        initiatedDate: "2025-03-01"
+        document: null
+        l2:
+          - package: hl7.fhir.be.patient-care
+            version: 1.1.0
+            status: published
+            deliveredDate: "2025-08-01"
+            artifacts:
+              - id: bemodelcareplan
+                name: BeModelCarePlan
+                type: logical-model
+                status: published
+              - id: bemodelcareteam
+                name: BeModelCareTeam
+                type: logical-model
+                status: published
+              - id: bemodelgoal
+                name: BeModelGoal
+                type: logical-model
+                status: published
+              - id: bemodeltask
+                name: BeModelTask
+                type: logical-model
+                status: published
+        l3:
+          - package: hl7.fhir.be.patient-care
+            igId: be-patient-care
+            version: 1.1.0
+            status: published
+            deliveredDate: "2025-09-26"
+            publishedDate: "2025-09-26"
+            artifacts:
+              - id: be-care-plan
+                name: BeCarePlan
+                type: profile
+                fhirBase: CarePlan
+                status: published
+              - id: be-careteam
+                name: BeCareTeam
+                type: profile
+                fhirBase: CareTeam
+                status: published
+              - id: be-goal
+                name: BeGoal
+                type: profile
+                fhirBase: Goal
+                status: published
+              - id: be-task
+                name: BeTask
+                type: profile
+                fhirBase: Task
+                status: published
+  - id: monitoring
+    name: Monitoring
+    description: Remote patient monitoring
+    project: be-patient-monitoring
+    status: wip
+    deliveries:
+      - version: 1.0.0
+        status: wip
+        current: true
+        initiatedDate: "2025-09-01"
+        document: null
+        l2:
+          - package: hl7.fhir.be.patient-monitoring
+            version: 1.0.0
+            status: wip
+            artifacts: []
+        l3: []
+  - id: prescription-search
+    name: PrescriptionSearch
+    description: Prescription search support
+    project: be-pss
+    status: published
+    deliveries:
+      - version: 1.0.0
+        status: published
+        current: true
+        initiatedDate: "2025-01-01"
+        document: null
+        l2:
+          - package: hl7.fhir.be.pss
+            version: 1.1.0
+            status: published
+            deliveredDate: null
+            artifacts:
+              - id: pssconsentmodel
+                name: PSSConsentModel
+                type: logical-model
+                status: published
+              - id: pssfeedbackmodel
+                name: PSSFeedbackModel
+                type: logical-model
+                status: published
+              - id: pssrequest
+                name: PSSRequest
+                type: logical-model
+                status: published
+              - id: pssresponse
+                name: PSSResponse
+                type: logical-model
+                status: published
+        l3:
+          - package: hl7.fhir.be.pss
+            igId: be-pss
+            version: 1.1.0
+            status: published
+            deliveredDate: "2025-05-14"
+            publishedDate: "2025-05-14"
+            artifacts:
+              - id: answeroptionadditionalcode
+                name: AnswerOptionAdditionalCode
+                type: extension
+                fhirBase: null
+                status: published
+              - id: codevalueset
+                name: CodeValueSet
+                type: extension
+                fhirBase: null
+                status: published
+              - id: pssrelevantage
+                name: PSSRelevantAge
+                type: extension
+                fhirBase: null
+                status: published
+              - id: pssstructuredrating
+                name: PSSStructuredRating
+                type: extension
+                fhirBase: null
+                status: published
+              - id: feedbacktask
+                name: FeedbackTask
+                type: profile
+                fhirBase: Task
+                status: published
+              - id: pssdataacquisitionform
+                name: PSSDataAcquisitionForm
+                type: profile
+                fhirBase: Questionnaire
+                status: published
+              - id: pssfeedbackbundle
+                name: PSSFeedbackBundle
+                type: profile
+                fhirBase: Bundle
+                status: published
+              - id: pssmedicationrequest
+                name: PSSMedicationRequest
+                type: profile
+                fhirBase: MedicationRequest
+                status: published
+              - id: psspatient
+                name: PSSPatient
+                type: profile
+                fhirBase: Patient
+                status: published
+              - id: pssquestionnairetask
+                name: PSSQuestionnaireTask
+                type: profile
+                fhirBase: Task
+                status: published
+              - id: pssrequestbundle
+                name: PSSRequestBundle
+                type: profile
+                fhirBase: Bundle
+                status: published
+              - id: pssresponsebundle
+                name: PSSResponseBundle
+                type: profile
+                fhirBase: Bundle
+                status: published
+              - id: pssresponsecommunicationrequest
+                name: PSSResponseCommunicationRequest
+                type: profile
+                fhirBase: CommunicationRequest
+                status: published
+              - id: pssresponsemedicationrequest
+                name: PSSResponseMedicationRequest
+                type: profile
+                fhirBase: MedicationRequest
+                status: published
+              - id: pssresponserequestgroup
+                name: PSSResponseRequestGroup
+                type: profile
+                fhirBase: RequestGroup
+                status: published
+              - id: pssresponseservicerequest
+                name: PSSResponseServiceRequest
+                type: profile
+                fhirBase: ServiceRequest
+                status: published
+        t:
+          - package: hl7.fhir.be.pss
+            version: 1.1.0
+            status: published
+            deliveredDate: null
+            artifacts:
+              - id: pssafeedbackreasons
+                name: PSSaFeedbackReasons
+                type: codesystem
+                status: published
+              - id: pssbundletags
+                name: PSSBundleTags
+                type: codesystem
+                status: published
+              - id: pss-exception-codes
+                name: PSSExceptionCodes
+                type: codesystem
+                status: published
+              - id: pssfeedbackcodes
+                name: PSSFeedbackCodes
+                type: codesystem
+                status: published
+              - id: pssqsiconditions
+                name: PSSQSIConditions
+                type: codesystem
+                status: published
+              - id: pssqsiprocedures
+                name: PSSQSIProcedures
+                type: codesystem
+                status: published
+              - id: pssratingtypes
+                name: PSSRatingTypes
+                type: codesystem
+                status: published
+              - id: pssrfeedbackreasons
+                name: PSSrFeedbackReasons
+                type: codesystem
+                status: published
+              - id: bacterialcodes
+                name: BacterialCodes
+                type: valueset
+                status: published
+              - id: candidacodes
+                name: CandidaCodes
+                type: valueset
+                status: published
+              - id: chlamydiacodes
+                name: ChlamydiaCodes
+                type: valueset
+                status: published
+              - id: compromisedimmunesystemcodes
+                name: CompromisedImmuneSystemCodes
+                type: valueset
+                status: published
+              - id: gonokokcodes
+                name: GonokokCodes
+                type: valueset
+                status: published
+              - id: mycoplasmacodes
+                name: MycoplasmaCodes
+                type: valueset
+                status: published
+              - id: oncologypatientcodes
+                name: OncologyPatientCodes
+                type: valueset
+                status: published
+              - id: othercodes
+                name: OtherCodes
+                type: valueset
+                status: published
+              - id: pregnancycodes
+                name: PregnancyCodes
+                type: valueset
+                status: published
+              - id: pss-exception-valueset
+                name: PSSExceptionValueSet
+                type: valueset
+                status: published
+              - id: pssfeedbackcodesvs
+                name: PSSFeedbackCodesVS
+                type: valueset
+                status: published
+              - id: pssfeedbackreasonsvs
+                name: PSSFeedbackReasonsVS
+                type: valueset
+                status: published
+              - id: pssratingtypesvs
+                name: PSSRatingTypesVS
+                type: valueset
+                status: published
+              - id: trichomonascodes
+                name: TrichomonasCodes
+                type: valueset
+                status: published
+  - id: referral-prescription
+    name: ReferralPrescription
+    description: Belgian referral prescription
+    project: be-referral
+    status: planned
+    deliveries:
+      - version: 1.0.0
+        status: planned
+        current: true
+        initiatedDate: "2025-06-01"
+        document: null
+        l2:
+          - package: hl7.fhir.be.drp
+            version: 1.0.0
+            status: published
+            deliveredDate: null
+            artifacts:
+              - id: bemodelannex81
+                name: BeModelAnnex81
+                type: logical-model
+                status: published
+              - id: bemodelassignment
+                name: BeModelAssignment
+                type: logical-model
+                status: published
+              - id: bemodelnursingprescription
+                name: BeModelNursingPrescription
+                type: logical-model
+                status: published
+              - id: bemodelorganisationclaim
+                name: BeModelOrganisationClaim
+                type: logical-model
+                status: published
+              - id: bemodelreferralprescription
+                name: BeModelReferralPrescription
+                type: logical-model
+                status: published
+              - id: bemodeltreatmentstatus
+                name: BeModelTreatmentStatus
+                type: logical-model
+                status: published
+        l3:
+          - package: hl7.fhir.be.drp
+            igId: be-referral
+            version: 1.0.0
+            status: published
+            deliveredDate: null
+            publishedDate: null
+            artifacts:
+              - id: be-ext-feedback-to-prescriber
+                name: BeFeedbackToPrescriber
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-latest-end-date
+                name: BeLatestEndDate
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-performer-type
+                name: BePerformerType
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-pss-info
+                name: BePSSInfo
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-relevant-info
+                name: BeRelevantInfo
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-validity-period
+                name: BeValidityPeriod
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-annex-81
+                name: BeAnnex81
+                type: profile
+                fhirBase: ServiceRequest
+                status: published
+              - id: be-organization-task
+                name: BeAssignmentTask
+                type: profile
+                fhirBase: Task
+                status: published
+              - id: be-performer-task
+                name: BePerformerTask
+                type: profile
+                fhirBase: Task
+                status: published
+              - id: be-referral-servicerequest
+                name: BeReferralServiceRequest
+                type: profile
+                fhirBase: ServiceRequest
+                status: published
+              - id: be-referral-servicerequest-nursing
+                name: BeReferralServiceRequestNursing
+                type: profile
+                fhirBase: ServiceRequest
+                status: published
+              - id: be-referral-task
+                name: BeReferralTask
+                type: profile
+                fhirBase: Task
+                status: published
+        t:
+          - package: hl7.fhir.be.drp
+            version: 1.0.0
+            status: published
+            deliveredDate: null
+            artifacts:
+              - id: be-cs-annex81-status-reason
+                name: BeCSAnnex81StatusReason
+                type: codesystem
+                status: published
+              - id: be-prescription-status-reason
+                name: BePrescriptionStatusReason
+                type: codesystem
+                status: published
+              - id: be-cs-temp-requested-service
+                name: BeTempRequestedService
+                type: codesystem
+                status: published
+              - id: be-cs-temp-requested-service-detail
+                name: BeTempRequestedServiceDetail
+                type: codesystem
+                status: published
+              - id: be-treatment-status-reason
+                name: BeTreatmentStatusReason
+                type: codesystem
+                status: published
+              - id: be-ns-uhmep-short
+                name: BeNsUhmepShort
+                type: namingsystem
+                status: published
+              - id: be-ns-uhmep
+                name: BeUnadressedHealthMessageExchangePlatform
+                type: namingsystem
+                status: published
+              - id: be-vs-referral-category
+                name: BeReferralCategory
+                type: valueset
+                status: published
+              - id: be-vs-annex-81-reason-code
+                name: BeVSAnnex81ReasonCode
+                type: valueset
+                status: published
+              - id: be-vs-annex81-status-reason
+                name: BeVSAnnex81StatusReason
+                type: valueset
+                status: published
+              - id: be-vs-bodysite-nursing
+                name: BeVSBodySiteNursing
+                type: valueset
+                status: published
+              - id: be-vs-performer-task-status-reason
+                name: BeVSPerformerTaskStatusReason
+                type: valueset
+                status: published
+              - id: be-vs-prescription-status-reason
+                name: BeVSPrescriptionStatusReason
+                type: valueset
+                status: published
+              - id: be-vs-requested-services-nurse
+                name: BeVSRequestedServicesNurse
+                type: valueset
+                status: published
+              - id: be-vs-requested-services-nurse-detail
+                name: BeVSRequestedServicesNurseDetail
+                type: valueset
+                status: published
+              - id: be-vs-request-intent
+                name: BeVSRequestIntent
+                type: valueset
+                status: published
+              - id: be-vs-request-note-type
+                name: BeVSRequestNoteType
+                type: valueset
+                status: published
+              - id: be-vs-task-intent
+                name: BeVSTaskIntent
+                type: valueset
+                status: published
+              - id: be-vs-treatment-status-reason
+                name: BeVSTreatmentStatusReason
+                type: valueset
+                status: published
+  - id: population-screening
+    name: PopulationScreening
+    description: Belgian population screening
+    project: be-public-health
+    status: published
+    deliveries:
+      - version: 1.0.3
+        status: published
+        current: true
+        initiatedDate: "2024-01-01"
+        document: null
+        l2:
+          - package: hl7.fhir.be.public-health
+            version: 1.0.3
+            status: published
+            deliveredDate: "2024-04-01"
+            artifacts:
+              - id: bemodelpopulationscreening
+                name: BeModelPopulationScreening
+                type: logical-model
+                status: published
+              - id: bemodelpopulationscreeningplan
+                name: BeModelPopulationScreeningPlan
+                type: logical-model
+                status: published
+        l3:
+          - package: hl7.fhir.be.public-health
+            igId: be-public-health
+            version: 1.0.3
+            status: published
+            deliveredDate: "2024-06-12"
+            publishedDate: "2024-06-12"
+            artifacts:
+              - id: be-populationscreening-appointment
+                name: BePopulationScreeningAppointment
+                type: profile
+                fhirBase: Appointment
+                status: published
+              - id: be-populationscreening-communication
+                name: BePopulationScreeningCommunication
+                type: profile
+                fhirBase: Communication
+                status: published
+              - id: be-populationscreening-encounter
+                name: BePopulationScreeningEncounter
+                type: profile
+                fhirBase: Encounter
+                status: published
+              - id: be-populationscreening-follow-up
+                name: BePopulationScreeningFollowUp
+                type: profile
+                fhirBase: ServiceRequest
+                status: published
+              - id: be-populationscreening-observation
+                name: BePopulationScreeningObservation
+                type: profile
+                fhirBase: Observation
+                status: published
+              - id: be-populationscreening-plan
+                name: BePopulationScreeningPlan
+                type: profile
+                fhirBase: CarePlan
+                status: published
+        t:
+          - package: hl7.fhir.be.public-health
+            version: 1.0.3
+            status: published
+            deliveredDate: null
+            artifacts:
+              - id: be-cs-populationscreening-next-invitation-type
+                name: BeCSPopulationScreeningNextInvitationType
+                type: codesystem
+                status: published
+              - id: cvko-id
+                name: CVKONamingSystem
+                type: namingsystem
+                status: published
+              - id: be-populationscreening-result-vs
+                name: BePopulationScreeningResultVS
+                type: valueset
+                status: published
+              - id: be-vspopulationscreening-body-site-location
+                name: BeVSPopulationScreeningBodySiteLocation
+                type: valueset
+                status: published
+              - id: bevspopulationscreeningfollowupadvice
+                name: BeVSPopulationScreeningFollowUpAdvice
+                type: valueset
+                status: published
+              - id: be-vs-populationscreening-next-invitation-type
+                name: BeVSPopulationScreeningNextInvitationType
+                type: valueset
+                status: published
+              - id: be-vs-populationscreening-type
+                name: BeVSPopulationScreeningType
+                type: valueset
+                status: published
+  - id: audit-consent
+    name: AuditConsent
+    description: Belgian audit events and consent
+    project: be-infsec
+    status: published
+    deliveries:
+      - version: 1.2.0
+        status: published
+        current: true
+        initiatedDate: "2024-06-01"
+        document: null
+        l2: []
+        t:
+          - package: hl7.fhir.be.infsec
+            version: 1.2.0
+            status: published
+            deliveredDate: "2024-09-01"
+            artifacts:
+              - id: be-cs-pseudonymization-type
+                name: BeCSPseudonymizationType
+                type: codesystem
+                status: published
+              - id: be-cs-pseudonymization-version
+                name: BeCSPseudonymizationVersion
+                type: codesystem
+                status: published
+              - id: be-vs-pseudonymization-type
+                name: BeVSPseudonymizationType
+                type: valueset
+                status: published
+        l3:
+          - package: hl7.fhir.be.infsec
+            igId: be-infsec
+            version: 1.2.0
+            status: published
+            deliveredDate: "2024-11-12"
+            publishedDate: "2024-11-12"
+            artifacts:
+              - id: be-ext-intended-profile
+                name: BeExtIntendedProfile
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-key-pseudonymization
+                name: BeExtKeyPseudonymization
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-pseudonymization
+                name: BeExtPseudonymization
+                type: extension
+                fhirBase: null
+                status: published
+  - id: lab-result
+    name: LabResult
+    description: Laboratory result reporting
+    project: be-lab
+    status: published
+    deliveries:
+      - version: 1.0.0
+        status: published
+        current: true
+        initiatedDate: "2022-03-01"
+        document: null
+        l2: []
+        l3:
+          - package: hl7.fhir.be.lab
+            igId: be-lab
+            version: 1.0.0
+            status: published
+            deliveredDate: "2022-09-15"
+            publishedDate: "2022-09-30"
+            artifacts:
+              - id: annotation-code
+                name: BeExtAnnotationCode
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-note
+                name: BeExtNote
+                type: extension
+                fhirBase: null
+                status: published
+              - id: be-ext-referencerange-comment
+                name: BeReferenceRangeComment
+                type: extension
+                fhirBase: null
+                status: published
+              - id: coded-annotation
+                name: BeCodedAnnotation
+                type: profile
+                fhirBase: Annotation
+                status: published
+              - id: be-laboratory-report
+                name: BeLaboratoryReport
+                type: profile
+                fhirBase: DiagnosticReport
+                status: published
+              - id: be-laboratory-report-composition
+                name: BeLaboratoryReportComposition
+                type: profile
+                fhirBase: Composition
+                status: published
+              - id: be-observation-laboratory
+                name: BeObservationLaboratory
+                type: profile
+                fhirBase: Observation
+                status: published
+              - id: be-specimen-laboratory
+                name: BeSpecimenLaboratory
+                type: profile
+                fhirBase: Specimen
+                status: published
+        t:
+          - package: hl7.fhir.be.lab
+            version: 1.0.0
+            status: published
+            deliveredDate: null
+            artifacts:
+              - id: albert
+                name: Albert
+                type: codesystem
+                status: published
+              - id: be-cs-coded-annotation-types
+                name: BeCSCodedAnnotationTypes
+                type: codesystem
+                status: published
+              - id: be-ns-belac
+                name: BeBELAC
+                type: namingsystem
+                status: published
+              - id: be-ns-lab-report-bundle-id
+                name: BeLabReportBundleId
+                type: namingsystem
+                status: published
+              - id: be-ns-lab-report-diagnostic-report-id
+                name: BeLabReportDiagnosticReportId
+                type: namingsystem
+                status: published
+              - id: be-ns-retam
+                name: BeRetam
+                type: namingsystem
+                status: published
+              - id: be-vs-coded-annotation-types
+                name: BeVSCodedAnnotationTypes
+                type: valueset
+                status: published
+  - id: be-document
+    name: BeDocument
+    description: Belgian document reference
+    project: be-patient-dossier
+    status: published
+    deliveries:
+      - version: 1.0.0
+        status: published
+        current: true
+        initiatedDate: "2025-11-01"
+        document: null
+        l2:
+          - package: hl7.fhir.be.patient-dossier
+            version: 1.0.0
+            status: published
+            deliveredDate: null
+            artifacts:
+              - id: bemodeldocument
+                name: BeModelDocument
+                type: logical-model
+                status: published
+        l3:
+          - package: hl7.fhir.be.patient-dossier
+            igId: be-patient-dossier
+            version: 1.0.0
+            status: published
+            deliveredDate: null
+            publishedDate: null
+            artifacts:
+              - id: be-document
+                name: BeDocument
+                type: profile
+                fhirBase: Bundle
+                status: published

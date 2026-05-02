@@ -1,0 +1,93 @@
+# Active Implementation Guides — governance artifact.
+#
+# This list is the single source of truth for "which IGs are we currently
+# tracking". The Tracker UI shows branch overlays (in the Timeline view) and
+# any other repo-level views ONLY for the IGs listed here.
+#
+# Workflow when adding an IG to the governance scope:
+#   1. Append a new entry below (the `repo` field is required; everything
+#      else is descriptive metadata).
+#   2. Re-run `npm run discover:repos` to refresh branch data — the discover
+#      script reads this file and sets `relevant: true` automatically on
+#      matching entries in public/data/repos.yaml.
+#
+# Workflow when removing an IG: delete its entry here, then re-run discover.
+# The IG's branch overlay disappears immediately on next reload.
+#
+# Fields per entry:
+#   repo         required — github "owner/name" (e.g. hl7-be/core)
+#   package      optional — matching FHIR package id, when known
+#   owner        optional — id of the workgroup that owns this IG. Must match
+#                an `id` in public/data/groups.yaml (e.g. "core-wg",
+#                "medication-wg"). Used by the Groups view.
+#   description  optional — short purpose statement / governance context
+
+activeIGs:
+  - repo: hl7-be/core
+    package: hl7.fhir.be.core
+    owner: core-wg
+    description: Belgian core profiles — foundational
+  - repo: hl7-be/core-clinical
+    package: hl7.fhir.be.core-clinical
+    owner: core-wg
+    description: Transversal clinical core
+  - repo: hl7-be/terminology
+    package: hl7.fhir.be.terminology
+    owner: terminology-wg
+    description: Belgian FHIR terminology resources (WIP since 2026-03-13)
+  - repo: hl7-be/medication
+    package: hl7.fhir.be.medication
+    owner: medication-wg
+    description: Medication prescription / dispense / line
+  - repo: hl7-be/lab
+    package: hl7.fhir.be.lab
+    owner: patient-dossier-wg
+    description:
+  - repo: hl7-be/allergy
+    package: hl7.fhir.be.allergy
+    owner: patient-dossier-wg
+    description:
+  - repo: hl7-be/vaccination
+    package: hl7.fhir.be.vaccination
+    owner: patient-dossier-wg
+    description:
+  - repo: hl7-be/mycarenet
+    package: hl7.fhir.be.mycarenet
+    owner:
+    description:
+  - repo: hl7-be/patient-care
+    package: hl7.fhir.be.patient-care
+    owner:
+    description:
+  - repo: hl7-be/patient-dossier
+    package: hl7.fhir.be.patient-dossier
+    owner: patient-dossier-wg
+    description:
+  - repo: hl7-be/patient-monitoring
+    package: hl7.fhir.be.patient-monitoring
+    owner: patient-monitoring-wg
+    description: Active WG meetings, no first version yet
+  - repo: hl7-be/pss
+    package: hl7.fhir.be.pss
+    owner: pss-wg
+    description:
+  - repo: hl7-be/public-health
+    package: hl7.fhir.be.public-health
+    owner:
+    description:
+  - repo: hl7-be/infsec
+    package: hl7.fhir.be.infsec
+    owner: infsec-wg
+    description:
+  - repo: hl7-be/referral
+    package: hl7.fhir.be.drp
+    owner: referral-wg
+    description: Digital Referral Prescription
+  - repo: hl7-be/patientwill
+    package: hl7.fhir.be.patientwill
+    owner:
+    description:
+  - repo: hl7-be/childreport
+    package: hl7.fhir.be.childreport
+    owner:
+    description:

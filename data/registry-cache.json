@@ -1,0 +1,673 @@
+{
+  "fetchedAt": "2026-04-15T11:07:38.364Z",
+  "registries": [
+    {
+      "name": "eHealth Belgium",
+      "url": "https://ehealth.fgov.be/standards/fhir/package-registry.json",
+      "data": {
+        "packages": [
+          {
+            "path": "allergy/package-list.json",
+            "package-id": "hl7.fhir.be.allergy",
+            "title": "HL7 Belgium FHIR Implementation Guide - Allergy profiles",
+            "canonical": "https://www.ehealth.fgov.be/standards/fhir/allergy",
+            "category": "National Base",
+            "ci-build": "https://build.fhir.org/ig/hl7-be/allergy",
+            "version-count": 4,
+            "latest": {
+              "version": "1.2.0",
+              "date": "2023-12-18",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/allergy/1.2.0"
+            },
+            "milestone": {
+              "version": "1.2.0",
+              "date": "2023-12-18",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/allergy/1.2.0"
+            },
+            "allVersions": [
+              {
+                "version": "1.2.0",
+                "date": "2023-12-18",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/allergy/1.2.0",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Allergy Profiles for Belgium"
+              },
+              {
+                "version": "1.1.0",
+                "date": "2023-02-06",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/allergy/1.1.0",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Allergy Profiles for Belgium"
+              },
+              {
+                "version": "1.0.1",
+                "date": "2022-09-13",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/allergy/1.0.1",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Allergy Profiles for Belgium"
+              },
+              {
+                "version": "1.0.0",
+                "date": "2022-06-07",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/allergy/1.0.0",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Allergy Profiles for Belgium"
+              }
+            ]
+          },
+          {
+            "path": "/package-list.json",
+            "package-id": "hl7.fhir.be.core-clinical",
+            "title": "HL7 Belgium FHIR Implementation Guide - core-clinical profiles",
+            "canonical": "https://www.ehealth.fgov.be/standards/fhir/core-clinical",
+            "category": "National Base",
+            "ci-build": "http://build.fhir.org/ig/hl7-be/core-clinical",
+            "version-count": 2,
+            "latest": {
+              "version": "1.1.0",
+              "date": "2026-02-27",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0"
+            },
+            "milestone": {
+              "version": "1.1.0",
+              "date": "2026-02-27",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.1.0"
+            },
+            "allVersions": []
+          },
+          {
+            "path": "core/package-list.json",
+            "package-id": "hl7.fhir.be.core",
+            "title": "HL7 Belgium FHIR Implementation Guide - Core profiles",
+            "canonical": "https://www.ehealth.fgov.be/standards/fhir/core",
+            "category": "test",
+            "ci-build": "https://build.fhir.org/ig/hl7-be/core",
+            "version-count": 5,
+            "latest": {
+              "version": "2.1.2",
+              "date": "2024-08-30",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/core/2.1.2"
+            },
+            "milestone": {
+              "version": "2.1.2",
+              "date": "2024-08-30",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/core/2.1.2"
+            },
+            "allVersions": [
+              {
+                "version": "2.1.2",
+                "date": "2024-08-30",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/core/2.1.2",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Core Profiles for Belgium"
+              },
+              {
+                "version": "2.1.1",
+                "date": "2024-06-11",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/core/2.1.1",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Core Profiles for Belgium"
+              },
+              {
+                "version": "2.1.0",
+                "date": "2024-05-02",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/core/2.1.0",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Core Profiles for Belgium"
+              },
+              {
+                "version": "2.0.1",
+                "date": "2022-09-13",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/core/2.0.1",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Core Profiles for Belgium"
+              },
+              {
+                "version": "2.0.0",
+                "date": "2022-03-24",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/core/2.0.0",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Core Profiles for Belgium"
+              }
+            ]
+          },
+          {
+            "path": "lab/package-list.json",
+            "package-id": "hl7.fhir.be.lab",
+            "title": "HL7 Belgium FHIR Implementation Guide - Lab related profiles",
+            "canonical": "https://www.ehealth.fgov.be/standards/fhir/lab",
+            "category": "National Base",
+            "ci-build": "https://build.fhir.org/ig/hl7-be/lab",
+            "version-count": 1,
+            "latest": {
+              "version": "1.0.0",
+              "date": "2022-09-08",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/lab/1.0.0"
+            },
+            "milestone": {
+              "version": "1.0.0",
+              "date": "2022-09-08",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/lab/1.0.0"
+            },
+            "allVersions": [
+              {
+                "version": "1.0.0",
+                "date": "2022-09-08",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/lab/1.0.0",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Lab related Profiles for Belgium"
+              }
+            ]
+          },
+          {
+            "path": "medication/package-list.json",
+            "package-id": "hl7.fhir.be.medication",
+            "title": "HL7 Belgium FHIR Implementation Guide - Medication profiles",
+            "canonical": "https://www.ehealth.fgov.be/standards/fhir/medication",
+            "category": "National Base",
+            "ci-build": "https://build.fhir.org/ig/hl7-be/medication",
+            "version-count": 1,
+            "latest": {
+              "version": "1.0.0",
+              "date": "2022-05-31",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/medication/1.0.0"
+            },
+            "milestone": {
+              "version": "1.0.0",
+              "date": "2022-05-31",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/medication/1.0.0"
+            },
+            "allVersions": [
+              {
+                "version": "1.1.0",
+                "date": "2025-10-10",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/medication/1.1.0",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Medication Profiles for Belgium"
+              },
+              {
+                "version": "1.0.0",
+                "date": "2022-05-31",
+                "path": "1.0.0",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Medication Profiles for Belgium"
+              }
+            ]
+          },
+          {
+            "path": "mycarenet/package-list.json",
+            "package-id": "hl7.fhir.be.mycarenet",
+            "title": "HL7 Belgium FHIR Implementation Guide - MyCareNet profiles",
+            "canonical": "https://www.ehealth.fgov.be/standards/fhir/mycarenet",
+            "category": "National Base",
+            "ci-build": "https://build.fhir.org/ig/hl7-be/mycarenet",
+            "version-count": 4,
+            "latest": {
+              "version": "2.1.2",
+              "date": "2025-07-10",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/mycarenet/2.1.2"
+            },
+            "milestone": {
+              "version": "2.1.2",
+              "date": "2025-07-10",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/mycarenet/2.1.2"
+            },
+            "allVersions": [
+              {
+                "version": "2.1.2",
+                "date": "2025-07-10",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/mycarenet/2.1.2",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR MyCareNet Profiles for Belgium"
+              },
+              {
+                "version": "2.1.1",
+                "date": "2025-06-25",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/mycarenet/2.1.1",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR MyCareNet Profiles for Belgium"
+              },
+              {
+                "version": "2.1.0",
+                "date": "2025-02-17",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/mycarenet/2.1.0",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR MyCareNet Profiles for Belgium"
+              },
+              {
+                "version": "2.0.0",
+                "date": "2022-09-08",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/mycarenet/2.0.0",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR MyCareNet Profiles for Belgium"
+              }
+            ]
+          },
+          {
+            "path": "vaccination/package-list.json",
+            "package-id": "hl7.fhir.be.vaccination",
+            "title": "HL7 Belgium FHIR Implementation Guide - Vaccination profiles",
+            "canonical": "https://www.ehealth.fgov.be/standards/fhir/vaccination",
+            "category": "National Base",
+            "ci-build": "https://build.fhir.org/ig/hl7-be/vaccination",
+            "version-count": 6,
+            "latest": {
+              "version": "1.1.1",
+              "date": "2025-03-24",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/vaccination/1.1.1"
+            },
+            "milestone": {
+              "version": "1.1.1",
+              "date": "2025-03-24",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/vaccination/1.1.1"
+            },
+            "allVersions": [
+              {
+                "version": "1.1.2",
+                "date": "2025-11-27",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/vaccination/1.1.2",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Vaccination Profiles for Belgium"
+              },
+              {
+                "version": "1.1.1",
+                "date": "2025-03-24",
+                "path": "1.1.1",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Vaccination Profiles for Belgium"
+              },
+              {
+                "version": "1.1.0",
+                "date": "2024-09-04",
+                "path": "1.1.0",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Vaccination Profiles for Belgium"
+              },
+              {
+                "version": "1.0.3",
+                "date": "2023-06-26",
+                "path": "1.0.3",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Vaccination Profiles for Belgium"
+              },
+              {
+                "version": "1.0.2",
+                "date": "2023-02-16",
+                "path": "1.0.2",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Vaccination Profiles for Belgium"
+              },
+              {
+                "version": "1.0.1",
+                "date": "2022-10-19",
+                "path": "1.0.1",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Vaccination Profiles for Belgium"
+              },
+              {
+                "version": "1.0.0",
+                "date": "2022-05-31",
+                "path": "1.0.0",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Vaccination Profiles for Belgium"
+              }
+            ]
+          },
+          {
+            "path": "vaccination/package-list.json",
+            "package-id": "hl7.fhir.be.public-health",
+            "title": "HL7 FHIR Implementation Guide: Public Health IG Release 1 - BE Realm | STU1",
+            "canonical": "https://www.ehealth.fgov.be/standards/fhir/public-health",
+            "category": "National Base",
+            "ci-build": "https://build.fhir.org/ig/hl7-be/public-health",
+            "version-count": 2,
+            "latest": {
+              "version": "1.0.1",
+              "date": "2023-08-11",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/public-health/1.0.1"
+            },
+            "milestone": {
+              "version": "1.0.1",
+              "date": "2023-08-11",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/public-health/1.0.1"
+            },
+            "allVersions": [
+              {
+                "version": "1.1.2",
+                "date": "2025-11-27",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/vaccination/1.1.2",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Vaccination Profiles for Belgium"
+              },
+              {
+                "version": "1.1.1",
+                "date": "2025-03-24",
+                "path": "1.1.1",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Vaccination Profiles for Belgium"
+              },
+              {
+                "version": "1.1.0",
+                "date": "2024-09-04",
+                "path": "1.1.0",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Vaccination Profiles for Belgium"
+              },
+              {
+                "version": "1.0.3",
+                "date": "2023-06-26",
+                "path": "1.0.3",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Vaccination Profiles for Belgium"
+              },
+              {
+                "version": "1.0.2",
+                "date": "2023-02-16",
+                "path": "1.0.2",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Vaccination Profiles for Belgium"
+              },
+              {
+                "version": "1.0.1",
+                "date": "2022-10-19",
+                "path": "1.0.1",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Vaccination Profiles for Belgium"
+              },
+              {
+                "version": "1.0.0",
+                "date": "2022-05-31",
+                "path": "1.0.0",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Vaccination Profiles for Belgium"
+              }
+            ]
+          },
+          {
+            "path": "public-health/package-list.json",
+            "package-id": "hl7.fhir.be.public-health",
+            "title": "HL7 FHIR Implementation Guide: Public Health IG Release 1 - BE Realm | STU1",
+            "canonical": "https://www.ehealth.fgov.be/standards/fhir/public-health",
+            "category": "National Base",
+            "ci-build": "https://build.fhir.org/ig/hl7-be/public-health",
+            "version-count": 4,
+            "latest": {
+              "version": "1.0.3",
+              "date": "2024-06-12",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/public-health/1.0.3"
+            },
+            "milestone": {
+              "version": "1.0.3",
+              "date": "2024-06-12",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/public-health/1.0.3"
+            },
+            "allVersions": [
+              {
+                "version": "1.0.3",
+                "date": "2024-06-12",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/public-health/1.0.3",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Public Health Profiles for Belgium"
+              },
+              {
+                "version": "1.0.2",
+                "date": "2023-10-16",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/public-health/1.0.2",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Public Health Profiles for Belgium"
+              },
+              {
+                "version": "1.0.1",
+                "date": "2023-08-11",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/public-health/1.0.1",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Public Health Profiles for Belgium"
+              },
+              {
+                "version": "1.0.0",
+                "date": "2023-06-27",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/public-health/1.0.0",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Public Health Profiles for Belgium"
+              }
+            ]
+          },
+          {
+            "path": "infsec/package-list.json",
+            "package-id": "hl7.fhir.be.infsec",
+            "title": "eHealth FHIR Infrastructure and Security Profiles for Belgium",
+            "canonical": "https://www.ehealth.fgov.be/standards/fhir/infsec",
+            "category": "National Base",
+            "ci-build": "http://build.fhir.org/ig/hl7-be/infsec",
+            "version-count": 3,
+            "latest": {
+              "version": "1.2.0",
+              "date": "2024-11-12",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/infsec/1.2.0"
+            },
+            "milestone": {
+              "version": "1.2.0",
+              "date": "2024-11-12",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/infsec/1.2.0"
+            },
+            "allVersions": [
+              {
+                "version": "1.2.0",
+                "date": "2024-11-12",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/infsec/1.2.0",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Infrastructure and Security Profiles for Belgium"
+              },
+              {
+                "version": "1.1.0",
+                "date": "2024-01-24",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/infsec/1.1.0",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Infrastructure and Security Profiles for Belgium"
+              },
+              {
+                "version": "1.0.0",
+                "date": "2023-10-23",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/infsec/1.0.0",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Infrastructure and Security Profiles for Belgium"
+              }
+            ]
+          },
+          {
+            "path": "patientwill/package-list.json",
+            "package-id": "hl7.fhir.be.patientwill",
+            "title": "eHealth FHIR Patient Will Profiles for Belgium",
+            "canonical": "https://www.ehealth.fgov.be/standards/fhir/patientwill",
+            "category": "National Base",
+            "ci-build": "http://build.fhir.org/ig/hl7-be/patientwill",
+            "version-count": 1,
+            "latest": {
+              "version": "1.0.0",
+              "date": "2024-01-08",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/patientwill/1.0.0"
+            },
+            "milestone": {
+              "version": "1.0.0",
+              "date": "2024-01-08",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/patientwill/1.0.0"
+            },
+            "allVersions": [
+              {
+                "version": "1.0.0",
+                "date": "2024-01-08",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/patientwill/1.0.0",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Patient Will Profiles for Belgium"
+              }
+            ]
+          },
+          {
+            "path": "nihdi-terminology/package-list.json",
+            "package-id": "hl7.fhir.be.nihdi-terminology",
+            "title": "NIHDI Terminology Profiles for Belgium",
+            "canonical": "https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology",
+            "category": "National Base",
+            "ci-build": "https://build.fhir.org/ig/hl7-be/nihdi-terminology",
+            "version-count": 1,
+            "latest": {
+              "version": "1.0.0",
+              "date": "2025-02-17",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/1.0.0"
+            },
+            "milestone": {
+              "version": "1.0.0",
+              "date": "2025-02-17",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/1.0.0"
+            },
+            "allVersions": [
+              {
+                "version": "1.0.0",
+                "date": "2025-02-17",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/1.0.0",
+                "fhirversion": "4.0.1",
+                "description": "NIHDI Terminology Profiles for Belgium"
+              }
+            ]
+          },
+          {
+            "path": "patient-care/package-list.json",
+            "package-id": "hl7.fhir.be.patient-care",
+            "title": "eHealth FHIR Patient Care Profiles for Belgium",
+            "canonical": "https://www.ehealth.fgov.be/standards/fhir/patient-care",
+            "category": "National Base",
+            "ci-build": "http://build.fhir.org/ig/hl7-be/patient-care/",
+            "version-count": 1,
+            "latest": {
+              "version": "1.0.0",
+              "date": "2025-05-08",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/patient-care/1.0.0"
+            },
+            "milestone": {
+              "version": "1.0.0",
+              "date": "2025-05-08",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/patient-care/1.0.0"
+            },
+            "allVersions": [
+              {
+                "version": "1.1.0",
+                "date": "2025-10-10",
+                "path": "https://www.ehealth.fgov.be/standards/fhir/patient-care/1.1.0",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Patient Care Profiles for Belgium"
+              },
+              {
+                "version": "1.0.0",
+                "date": "2025-05-08",
+                "path": "1.0.0",
+                "fhirversion": "4.0.1",
+                "description": "eHealth FHIR Patient Care Profiles for Belgium"
+              }
+            ]
+          },
+          {
+            "path": "/package-list.json",
+            "package-id": "hl7.fhir.be.pss",
+            "title": "HL7 Belgium FHIR Implementation Guide - pss profiles",
+            "canonical": "https://www.ehealth.fgov.be/standards/fhir/pss",
+            "category": "National Base",
+            "ci-build": "http://build.fhir.org/ig/hl7-be/pss",
+            "version-count": 2,
+            "latest": {
+              "version": "1.1.0",
+              "date": "2026-02-27",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/pss/1.1.0"
+            },
+            "milestone": {
+              "version": "1.1.0",
+              "date": "2026-02-27",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/pss/1.1.0"
+            },
+            "allVersions": []
+          },
+          {
+            "path": "/package-list.json",
+            "package-id": "hl7.fhir.be.childreport",
+            "title": "HL7 BE child report IG",
+            "canonical": "https://www.ehealth.fgov.be/standards/fhir/childreport",
+            "category": "National Base",
+            "ci-build": "http://build.fhir.org/ig/hl7-be/childreport",
+            "version-count": 1,
+            "latest": {
+              "version": "1.0.0",
+              "date": "2026-04-10",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/childreport/1.0.0"
+            },
+            "milestone": {
+              "version": "1.0.0",
+              "date": "2026-04-10",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/childreport/1.0.0"
+            },
+            "allVersions": []
+          },
+          {
+            "path": "/package-list.json",
+            "package-id": "hl7.fhir.be.patient-dossier",
+            "title": "HL7 BE patient dossier IG",
+            "canonical": "https://www.ehealth.fgov.be/standards/fhir/patient-dossier",
+            "category": "National Base",
+            "ci-build": "http://build.fhir.org/ig/hl7-be/patient-dossier",
+            "version-count": 1,
+            "latest": {
+              "version": "1.0.0",
+              "date": "2026-03-26",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/patient-dossier/1.0.0"
+            },
+            "milestone": {
+              "version": "1.0.0",
+              "date": "2026-03-26",
+              "path": "https://www.ehealth.fgov.be/standards/fhir/patient-dossier/1.0.0"
+            },
+            "allVersions": []
+          }
+        ]
+      }
+    }
+  ],
+  "publications": {
+    "hl7.fhir.be.patient-dossier": {
+      "allVersions": [
+        {
+          "version": "1.0.0",
+          "date": "2026-03-26",
+          "path": "https://www.ehealth.fgov.be/standards/fhir/patient-dossier/1.0.0",
+          "fhirversion": "4.0.1",
+          "description": "eHealth FHIR Patient Dossier Profiles for Belgium",
+          "status": "release"
+        }
+      ],
+      "source": "package-list.json"
+    },
+    "hl7.fhir.be.drp": {
+      "allVersions": [
+        {
+          "version": "1.0.0",
+          "date": "2025-10-10",
+          "path": "https://www.ehealth.fgov.be/standards/fhir/drp/1.0.0",
+          "fhirversion": "4.0.1",
+          "description": "eHealth FHIR Digital Referral Prescription Profiles for Belgium",
+          "status": "release"
+        }
+      ],
+      "source": "package-list.json"
+    },
+    "hl7.fhir.be.patientwill": {
+      "allVersions": [
+        {
+          "version": "1.0.0",
+          "date": "2024-01-08",
+          "path": "https://www.ehealth.fgov.be/standards/fhir/patientwill/1.0.0",
+          "fhirversion": "4.0.1",
+          "description": "eHealth FHIR Patient Will Profiles for Belgium",
+          "status": "release"
+        }
+      ],
+      "source": "package-list.json"
+    }
+  }
+}

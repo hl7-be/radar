@@ -1,0 +1,36 @@
+Purpose	Subset	SCTID
+Clinical data entry	Belgian subset for medical problems in patient health records (foundation metadata concept)	40811000172108
+Clinical data entry	Belgian subset for nursing in patient health records (foundation metadata concept)	100941000172101
+Clinical data entry	Belgian subset for neonatology in patient health records (foundation metadata concept)	100971000172106
+Clinical data entry	Belgian subset for pulmonology in patient health records (foundation metadata concept)	100961000172102
+Clinical data entry	Belgian subset for rheumatology in patient health records (foundation metadata concept)	100981000172109
+Clinical data entry	Belgian subset for nephrology in patient health records (foundation metadata concept)	100951000172104
+Clinical data entry	Belgian subset for cardiology in patient health records (foundation metadata concept)	131001000172104
+Clinical data entry	Belgian subset for hematology in patient health records (foundation metadata concept)	130991000172100
+Clinical data entry	Belgian subset for infectious diseases in patient health records (foundation metadata concept)	130981000172103
+Clinical data entry	Belgian subset for intensive care in patient health records (foundation metadata concept)	130971000172101
+Clinical data entry	Belgian GP subset (foundation metadata concept)	721000172106
+Data interoperability (FHIR ValueSet)	Belgian subset for AllergyIntolerance, causative agent, non-drug (foundation metadata concept)	50851000172106
+Data interoperability (FHIR ValueSet)	Belgian subset for AllergyIntolerance, manifestation (foundation metadata concept)	50861000172108
+Data interoperability (FHIR ValueSet)	Belgian subset for Vaccination (foundation metadata concept)	50831000172102
+Data interoperability (FHIR ValueSet)	Belgian subset for Allergy Intolerance Causative Agent Drug Simple Refset	50841000172109
+Data interoperability (FHIR ValueSet)	Belgian subset for AllergyIntolerance, causative agent, drug (foundation metadata concept)	181051000172108
+Data interoperability (FHIR ValueSet)	Belgian subset for AllergyIntoleranceNoAllergy (foundation metadata concept)	181061000172105
+Data interoperability (FHIR ValueSet)	Belgian subset for AllergyIntoleranceType (foundation metadata concept)	181041000172106
+Data interoperability (FHIR ValueSet)	Belgian simple reference set for translated plant materials (foundation metadata concept)	551000172106
+Data interoperability (FHIR ValueSet)	Belgian simple reference set for translated animal materials (foundation metadata concept)	561000172108
+Data interoperability (FHIR ValueSet)	Belgian simple reference set for translated edible substances (foundation metadata concept)	541000172109
+Data interoperability (FHIR ValueSet)	Belgian Transversal FHIR HL7 subset for Body Laterality (foundation metadata concept)	211271000172108
+Data interoperability (FHIR ValueSet)	Belgian Transversal FHIR HL7 subset for Body Location (foundation metadata concept)	211411000172101
+Data interoperability (FHIR ValueSet)	Belgian Transversal FHIR HL7 subset for Body Topography (foundation metadata concept)	211201000172100
+Data interoperability (FHIR ValueSet)	Belgian subset for Nursing Digital Referral Prescription Annex 81 Medical Problem (foundation metadata concept)	211211000172102
+Data interoperability (FHIR ValueSet)	Belgian subset for Nursing Digital Referral Prescription Annex 81 Nursing Diagnosis (foundation metadata concept)	211261000172104
+Data interoperability (FHIR ValueSet)	Belgian subset for Nursing Digital Referral Prescription Annex 81 Requested (foundation metadata concept)	211171000172104
+Data interoperability (FHIR ValueSet)	Belgian subset for Nursing Digital Referral Prescription Categories of Care (foundation metadata concept)	211241000172103
+Data interoperability (FHIR ValueSet)	Belgian subset for Nursing Digital Referral Prescription Diabetes Education Identifier (foundation metadata concept)	211221000172107
+Data interoperability (FHIR ValueSet)	Belgian subset for Nursing Digital Referral Prescription Educator Type (foundation metadata concept)	211181000172101
+Data interoperability (FHIR ValueSet)	Belgian subset for Nursing Digital Referral Prescription Nursing Care Requested (foundation metadata concept)	211281000172106
+Data interoperability (FHIR ValueSet)	Belgian subset for Nursing Digital Referral Prescription Nursing Prescription Technical Type (foundation metadata concept)	211291000172109
+Data interoperability (FHIR ValueSet)	Belgian subset for Nursing Digital Referral Prescription Parameter Type (foundation metadata concept)	211191000172103
+Data interoperability (FHIR ValueSet)	Belgian subset for Nursing Digital Referral Prescription Sample Substance Type (foundation metadata concept)	211251000172101
+Data interoperability (FHIR ValueSet)	Belgian subset for Nursing Digital Referral Prescription Body Location (foundation metadata concept)	211231000172105

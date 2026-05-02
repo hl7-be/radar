@@ -1,0 +1,366 @@
+# External package registries. Registries are fetched at runtime and their
+# packages are merged into the list below; packages explicitly listed under
+# `packages:` always win over anything the registry reports.
+registries:
+  - name: eHealth Belgium
+    url: https://ehealth.fgov.be/standards/fhir/package-registry.json
+
+packages:
+  hl7.fhir.be.core:
+    repository: hl7-be/core
+    igUrl: https://build.fhir.org/ig/hl7-be/core
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/core
+    currentVersion: 2.1.2
+    timeline:
+      - buildStart: '2021-09-01'
+        requestToPublish: '2022-02-01'
+        version: 2.0.0
+        publicComment:
+          start: '2022-02-10'
+          end: '2022-03-10'
+        release: '2022-03-24'
+      - buildStart: '2023-10-01'
+        requestToPublish: '2024-03-15'
+        version: 2.1.0
+        publicComment:
+          start: '2024-03-20'
+          end: '2024-04-20'
+        release: '2024-05-02'
+      - buildStart: '2024-05-10'
+        requestToPublish: '2024-07-20'
+        version: 2.1.2
+        release: '2024-08-30'
+      - buildStart: '2025-11-01'
+        requestToPublish: '2026-03-15'
+        version: 2.2.0
+        publicComment:
+          start: '2026-04-01'
+          end: '2026-04-30'
+    allVersions:
+      - version: 2.1.2
+        date: '2024-08-30T03:07:05.000Z'
+        description: eHealth Platform Federal Core Profiles (built Fri, Aug 30, 2024 17:07+0200+02:00)
+      - version: 2.1.1
+        date: '2024-06-11T00:06:06.000Z'
+        description: eHealth Platform Federal Core Profiles (built Tue, Jun 11, 2024 14:06+0200+02:00)
+      - version: 2.1.0
+        date: '2024-05-02T01:28:00.000Z'
+        description: eHealth Platform Federal Core Profiles (built Thu, May 2, 2024 15:28+0200+02:00)
+      - version: 2.0.1
+        date: '2022-09-13T12:00:00.000Z'
+        description: eHealth Platform Federal Core Profiles (built Tue, Sep 13, 2022 17:18+0200+02:00)
+      - version: 2.0.0
+        date: '2022-03-24T12:00:00.000Z'
+        description: eHealth Platform Federal Core Profiles (built Thu, Mar 24, 2022 18:40+0100+01:00)
+  hl7.fhir.be.core-clinical:
+    repository: hl7-be/core-clinical
+    igUrl: https://build.fhir.org/ig/hl7-be/core-clinical
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/core-clinical
+    currentVersion: 1.1.0
+    timeline:
+      - buildStart: '2021-11-01'
+        requestToPublish: '2022-04-15'
+        version: 1.0.0
+        release: '2022-05-31'
+      - buildStart: '2025-06-01'
+        requestToPublish: '2026-01-10'
+        version: 1.1.0
+        publicComment:
+          start: '2026-01-15'
+          end: '2026-02-15'
+        release: '2026-02-27'
+      - buildStart: '2026-03-01'
+        requestToPublish: '2026-04-10'
+        version: 1.2.0
+        publicComment:
+          start: '2026-04-15'
+          end: '2026-05-31'
+    allVersions:
+      - version: 1.1.0
+        date: '2026-02-27T03:19:53.000Z'
+        description: HL7 Belgium - Transversal Clinical Core (built Fri, Feb 27, 2026 16:19+0100+01:00)
+      - version: 1.0.0
+        date: '2022-05-31T12:00:00.000Z'
+        description: 'HL7 FHIR Implementation Guide: Transversal Clinical Core (built Tue, May 31, 2022 09:29+0200+02:00)'
+  hl7.fhir.be.terminology:
+    repository: hl7-be/terminology
+    igUrl: https://build.fhir.org/ig/hl7-be/terminology
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/terminology
+    timeline:
+      - buildStart: '2026-03-13'
+  hl7.fhir.be.medication:
+    repository: hl7-be/medication
+    igUrl: https://build.fhir.org/ig/hl7-be/medication
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/medication
+    currentVersion: 1.1.0
+    timeline:
+      - buildStart: '2021-10-01'
+        requestToPublish: '2022-04-01'
+        version: 1.0.0
+        release: '2022-05-31'
+      - buildStart: '2024-06-01'
+        requestToPublish: '2025-09-01'
+        version: 1.1.0
+        publicComment:
+          start: '2025-09-15'
+          end: '2025-10-31'
+        release: '2025-11-26'
+      - buildStart: '2026-01-15'
+        requestToPublish: '2026-04-20'
+        version: 1.2.0
+        publicComment:
+          start: '2026-05-01'
+          end: '2026-06-15'
+    allVersions:
+      - version: 1.1.0
+        date: '2025-11-26T10:34:33.000Z'
+        description: FHIR Medication specifications (built Fri, Oct 10, 2025 13:23+0200+02:00)
+      - version: 1.0.0
+        date: '2022-05-31T12:00:00.000Z'
+        description: Medication (built Tue, May 31, 2022 09:42+0200+02:00)
+  hl7.fhir.be.lab:
+    repository: hl7-be/lab
+    igUrl: https://build.fhir.org/ig/hl7-be/lab
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/lab
+    timeline:
+      - version: 1.0.0
+        release: '2022-09-08'
+    currentVersion: 1.0.0
+    allVersions:
+      - version: 1.0.0
+        date: '2022-09-08T12:00:00.000Z'
+        description: HL7 BE Laboratory WG Implementation Guide (built Thu, Sep 8, 2022 14:30+0200+02:00)
+  hl7.fhir.be.allergy:
+    repository: hl7-be/allergy
+    igUrl: https://build.fhir.org/ig/hl7-be/allergy
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/allergy
+    timeline:
+      - version: 1.0.0
+        release: '2022-06-07'
+      - version: 1.0.1
+        release: '2022-09-13'
+      - version: 1.1.0
+        release: '2023-02-06'
+      - version: 1.2.0
+        release: '2023-12-18'
+    currentVersion: 1.2.0
+    allVersions:
+      - version: 1.2.0
+        date: '2023-12-18T10:58:46.000Z'
+        description: Allergy (Patient Dossier) (built Mon, Dec 18, 2023 11:58+0100+01:00)
+      - version: 1.1.0
+        date: '2023-02-06T12:00:00.000Z'
+        description: Allergy (Patient Dossier) (built Mon, Feb 6, 2023 13:32+0100+01:00)
+      - version: 1.0.1
+        date: '2022-09-13T12:00:00.000Z'
+        description: Allergy (Patient Dossier) (built Tue, Sep 13, 2022 17:51+0200+02:00)
+      - version: 1.0.0
+        date: '2022-06-07T12:00:00.000Z'
+        description: Allergy (Patient Dossier) (built Tue, Jun 7, 2022 10:36+0200+02:00)
+  hl7.fhir.be.vaccination:
+    repository: hl7-be/vaccination
+    igUrl: https://build.fhir.org/ig/hl7-be/vaccination
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/vaccination
+    currentVersion: 1.1.2
+    timeline:
+      - buildStart: '2021-12-01'
+        requestToPublish: '2022-04-10'
+        version: 1.0.0
+        release: '2022-05-31'
+      - buildStart: '2024-01-15'
+        requestToPublish: '2024-07-01'
+        version: 1.1.0
+        publicComment:
+          start: '2024-07-10'
+          end: '2024-08-20'
+        release: '2024-09-04'
+      - buildStart: '2025-06-01'
+        requestToPublish: '2025-10-01'
+        version: 1.1.2
+        release: '2025-11-27'
+      - buildStart: '2026-01-10'
+        requestToPublish: '2026-03-01'
+        version: 1.2.0
+        publicComment:
+          start: '2026-03-15'
+          end: '2026-04-15'
+    allVersions:
+      - version: 1.1.2
+        date: '2025-11-27T02:12:01.000Z'
+        description: Belgian Patient profiles (built Thu, Nov 27, 2025 15:12+0100+01:00)
+      - version: 1.1.1
+        date: '2025-03-24T02:54:48.000Z'
+        description: Belgian Patient profiles (built Mon, Mar 24, 2025 15:54+0100+01:00)
+      - version: 1.1.0
+        date: '2024-09-04T02:47:48.000Z'
+        description: Belgian Patient profiles (built Wed, Sep 4, 2024 16:47+0200+02:00)
+      - version: 1.0.3
+        date: '2023-06-26T03:48:27.000Z'
+        description: Belgian Patient profiles (built Mon, Jun 26, 2023 17:48+0200+02:00)
+      - version: 1.0.2
+        date: '2023-02-16T12:00:00.000Z'
+        description: Belgian Patient profiles (built Thu, Feb 16, 2023 14:11+0100+01:00)
+      - version: 1.0.1
+        date: '2022-10-19T12:00:00.000Z'
+        description: Belgian Patient profiles (built Wed, Oct 19, 2022 09:28+0200+02:00)
+      - version: 1.0.0
+        date: '2022-05-31T12:00:00.000Z'
+        description: Belgian Patient profiles (built Tue, May 31, 2022 11:41+0200+02:00)
+  hl7.fhir.be.mycarenet:
+    repository: hl7-be/mycarenet
+    igUrl: https://build.fhir.org/ig/hl7-be/mycarenet
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/mycarenet
+    timeline:
+      - version: 2.0.0
+        release: '2022-09-08'
+      - version: 2.1.0
+        release: '2025-02-17'
+      - version: 2.1.1
+        release: '2025-06-25'
+      - version: 2.1.2
+        release: '2025-07-10'
+    currentVersion: 2.1.2
+    allVersions:
+      - version: 2.1.2
+        date: '2025-07-10T07:45:39.000Z'
+        description: null
+      - version: 2.1.1
+        date: '2025-06-25T08:42:17.000Z'
+        description: null
+      - version: 2.1.0
+        date: '2025-02-17T06:43:21.000Z'
+        description: null
+      - version: 2.0.0
+        date: '2022-09-08T12:00:00.000Z'
+        description: null
+  hl7.fhir.be.patient-care:
+    repository: hl7-be/patient-care
+    igUrl: https://build.fhir.org/ig/hl7-be/patient-care
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/patient-care
+    timeline:
+      - version: 1.0.0
+        release: '2025-05-08'
+      - version: 1.1.0
+        release: '2025-10-10'
+    currentVersion: 1.1.0
+    allVersions:
+      - version: 1.1.0
+        date: '2025-11-26T10:29:29.000Z'
+        description: Belgian Patient care profiles (built Fri, Oct 10, 2025 14:02+0200+02:00)
+      - version: 1.0.0
+        date: '2025-05-08T08:13:56.000Z'
+        description: Belgian Patient care profiles (built Thu, May 8, 2025 10:13+0200+02:00)
+  hl7.fhir.be.patient-dossier:
+    repository: hl7-be/patient-dossier
+    igUrl: https://build.fhir.org/ig/hl7-be/patient-dossier
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/patient-dossier
+    timeline:
+      - version: 1.0.0
+        release: '2026-03-26'
+  hl7.fhir.be.patient-monitoring:
+    repository: hl7-be/patient-monitoring
+    igUrl: https://build.fhir.org/ig/hl7-be/patient-monitoring
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/patient-monitoring
+  hl7.fhir.be.pss:
+    repository: hl7-be/pss
+    igUrl: https://build.fhir.org/ig/hl7-be/pss
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/pss
+    currentVersion: 1.1.0
+    timeline:
+      - buildStart: '2024-09-01'
+        requestToPublish: '2025-03-20'
+        version: 1.0.0
+        publicComment:
+          start: '2025-04-01'
+          end: '2025-04-30'
+        release: '2025-05-14'
+      - buildStart: '2025-06-01'
+        requestToPublish: '2025-12-15'
+        version: 1.1.0
+        publicComment:
+          start: '2026-01-05'
+          end: '2026-02-05'
+        release: '2026-02-27'
+      - buildStart: '2026-03-15'
+        requestToPublish: '2026-05-20'
+        version: 1.2.0
+        publicComment:
+          start: '2026-06-01'
+          end: '2026-07-15'
+    allVersions:
+      - version: 1.1.0
+        date: '2026-02-27T03:08:13.000Z'
+        description: Example IG exercises many of the fields in a SUSHI configuration. (built Fri, Feb 27, 2026 16:08+0100+01:00)
+      - version: 1.0.0
+        date: '2025-05-14T08:44:40.000Z'
+        description: Example IG exercises many of the fields in a SUSHI configuration. (built Wed, May 14, 2025 10:44+0200+02:00)
+  hl7.fhir.be.public-health:
+    repository: hl7-be/public-health
+    igUrl: https://build.fhir.org/ig/hl7-be/public-health
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/public-health
+    timeline:
+      - version: 1.0.0
+        release: '2022-05-31'
+      - version: 1.0.1
+        release: '2022-10-19'
+      - version: 1.0.2
+        release: '2023-02-16'
+      - version: 1.0.3
+        release: '2023-06-26'
+      - version: 1.1.0
+        release: '2024-09-04'
+      - version: 1.1.1
+        release: '2025-03-24'
+      - version: 1.1.2
+        release: '2025-11-27'
+    currentVersion: 1.0.3
+    allVersions:
+      - version: 1.0.3
+        date: '2024-06-12T08:51:15.000Z'
+        description: Public Health (built Wed, Jun 12, 2024 10:51+0200+02:00)
+      - version: 1.0.2
+        date: '2023-10-16T00:05:55.000Z'
+        description: Public Health (built Mon, Oct 16, 2023 14:05+0200+02:00)
+      - version: 1.0.1
+        date: '2023-08-11T01:45:13.000Z'
+        description: Public Health (built Fri, Aug 11, 2023 15:45+0200+02:00)
+      - version: 1.0.0
+        date: '2023-06-26T23:40:05.000Z'
+        description: Public Health (built Tue, Jun 27, 2023 13:40+0200+02:00)
+  hl7.fhir.be.infsec:
+    repository: hl7-be/infsec
+    igUrl: https://build.fhir.org/ig/hl7-be/infsec
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/infsec
+    timeline:
+      - version: 1.0.0
+        release: '2023-10-23'
+      - version: 1.1.0
+        release: '2024-01-24'
+      - version: 1.2.0
+        release: '2024-11-12'
+    currentVersion: 1.2.0
+    allVersions:
+      - version: 1.2.0
+        date: '2024-11-12T08:23:24.000Z'
+        description: eHealth Platform Federal infsec Profiles (built Tue, Nov 12, 2024 09:23+0100+01:00)
+      - version: 1.1.0
+        date: '2024-01-24T08:08:41.000Z'
+        description: eHealth Platform Federal infsec Profiles (built Wed, Jan 24, 2024 09:08+0100+01:00)
+      - version: 1.0.0
+        date: '2023-10-23T10:10:27.000Z'
+        description: eHealth Platform Federal infsec Profiles (built Mon, Oct 23, 2023 12:10+0200+02:00)
+  hl7.fhir.be.drp:
+    repository: hl7-be/referral
+    igUrl: https://build.fhir.org/ig/hl7-be/referral
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/drp
+    timeline:
+      - version: 1.0.0
+        release: '2025-10-10'
+  hl7.fhir.be.patientwill:
+    repository: hl7-be/patientwill
+    igUrl: https://build.fhir.org/ig/hl7-be/patientwill
+    publicationUrl: https://ehealth.fgov.be/standards/fhir/patientwill
+    timeline:
+      - version: 1.0.0
+        release: '2024-01-08'
+    

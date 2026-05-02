@@ -1,0 +1,14 @@
+# Local feature overrides — NEVER COMMITTED (gitignored).
+#
+# Anything here overrides what's in features.yaml at runtime. Use it to
+# toggle views just for your local browser without changing the team-shared
+# defaults.
+#
+# Examples:
+#   features:
+#     crawl: false        # hide Crawl on my machine even though dev defaults show it
+#     refsets: true       # turn something on locally that's normally off
+#
+# Leave the file empty (or delete `features:` block entirely) for no overrides.
+
+features:
